@@ -1,0 +1,16 @@
+[
+{
+  "modid": "endergriefer_jamoa",
+  "name": "Just Another More Ore Attempt",
+  "description": "Another of many attempts at adding more ores and mining related items",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "kaminocoding.github.io",
+  "updateUrl": "",
+  "authorList": ["Endergreifer153"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
