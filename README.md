@@ -1,2 +1,2 @@
-JAMOA                                                                                     [![Build Status](https://travis-ci.org/KaminoCoding/JAMOA.svg?branch=master)](https://travis-ci.org/KaminoCoding/JAMOA)
+JAMOA                                                                                     [![Build Status](https://drone.io/github.com/KaminoCoding/JAMOA/status.png)](https://drone.io/github.com/KaminoCoding/JAMOA/latest)
 =====
