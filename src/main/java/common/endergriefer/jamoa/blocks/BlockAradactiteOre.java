@@ -21,7 +21,7 @@ public class BlockAradactiteOre extends Block {
         setHardness(3.0F);
         setResistance(8.5F);
         setHarvestLevel("pickaxe", 1);
-        setLightLevel(5.0F);
+
     }
 
     @Override

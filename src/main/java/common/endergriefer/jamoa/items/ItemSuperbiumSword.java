@@ -2,7 +2,13 @@ package common.endergriefer.jamoa.items;
 
 import common.endergriefer.jamoa.help.Reference;
 import common.endergriefer.jamoa.jamoa;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.world.World;
 
 /**
  * Created by noah on 5/14/14.
@@ -17,5 +23,26 @@ public class ItemSuperbiumSword extends ItemSword {
         setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
         setCreativeTab(jamoa.jamoaTab);
 
+
+    }
+
+    @Override
+    public void onUpdate(ItemStack stack, World world, Entity entity, int par4, boolean par5)
+    {
+        super.onUpdate(stack, world, entity, par4, par5);
+        {
+            EntityPlayer player = (EntityPlayer) entity;
+            ItemStack equipped = player.getCurrentEquippedItem();
+            if (equipped == stack){
+                player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 5, 3));
+                player.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 5, 3));
+            }
+        }
+    }
+
+    @Override
+    public boolean hasEffect(ItemStack item)
+    {
+        return true;
     }
 }

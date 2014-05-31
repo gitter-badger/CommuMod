@@ -1,16 +1,11 @@
 package common.endergriefer.jamoa.help;
 
 
-import common.endergriefer.jamoa.jamoa;
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.registry.EntityRegistry;
+
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
-import net.minecraft.entity.EntityList;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-
-import java.util.Random;
 
 
 public class RegisterHelper {

@@ -20,26 +20,26 @@ public class WorldGenjamoa implements IWorldGenerator
             case -1:
                 generateNether(world, rand, chunkX * 16, chunkZ * 16);
             case 0:
-                generateSurface(world, rand, chunkX*16, chunkZ*16);
+                generateSurface(world, rand, chunkX * 16, chunkZ * 16);
         }
     }
 
     private void generateSurface(World world, Random rand, int chunkX, int chunkZ)
     {
-        for(int i = 0; i < 10; i++) {
+        for(int i = 0; i < 2; i++) {
             int randPosX = chunkX + rand.nextInt(16);
-            int randPosY = rand.nextInt(40);
+            int randPosY = rand.nextInt(60);
             int randPosZ = chunkZ + rand.nextInt(16);
 
-            (new WorldGenMinable(ModBlocks.superbiumOre, 5, ModBlocks.superbiumOre)).generate(world, rand, randPosX, randPosY, randPosZ);
+            new WorldGenMinable(ModBlocks.superbiumOre, 15).generate(world, rand, randPosX, randPosY, randPosZ);
         }
 
-        for (int j = 0; j < 25; j++) {
-            int randPosX = chunkX + rand.nextInt(12);
-            int randPosY = rand.nextInt(80);
-            int randPosZ = chunkZ + rand.nextInt(12);
+        for (int j = 0; j < 2; j++) {
+            int randPosX = chunkX + rand.nextInt(16);
+            int randPosY = rand.nextInt(256);
+            int randPosZ = chunkZ + rand.nextInt(16);
 
-            (new WorldGenMinable(ModBlocks.aradactiteOre, 8, ModBlocks.aradactiteOre)).generate(world, rand, randPosX, randPosY, randPosZ);
+            new WorldGenMinable(ModBlocks.aradactiteOre, 30).generate(world, rand, randPosX, randPosY, randPosZ);
         }
     }
 

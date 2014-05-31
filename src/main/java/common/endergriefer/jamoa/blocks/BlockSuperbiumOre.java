@@ -22,7 +22,7 @@ public class BlockSuperbiumOre extends Block {
         setHardness(4.0F);
         setResistance(10.0F);
         setHarvestLevel("pickaxe", 0);
-        setLightLevel(3.0F);
+
 
     }
     @Override

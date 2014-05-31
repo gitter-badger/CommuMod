@@ -2,6 +2,7 @@ package common.endergriefer.jamoa;
 
 import common.endergriefer.jamoa.blocks.ModBlocks;
 import common.endergriefer.jamoa.entity.EntityMiner;
+import common.endergriefer.jamoa.food_items.foodItems;
 import common.endergriefer.jamoa.items.ModItems;
 import common.endergriefer.jamoa.proxy.proxyCommon;
 import common.endergriefer.jamoa.world.jamoaworld;
@@ -54,6 +55,7 @@ public class jamoa
         // some example code
         ModBlocks.loadBlocks();
         ModItems.loadItems();
+        foodItems.loadFood();
         jamoaworld.mainRegistry();
         registerEntity(EntityMiner.class, "miner");
         proxy.registerRenderers();
