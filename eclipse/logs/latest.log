@@ -1,9 +1,9 @@
-[23:31:20] [main/INFO]: Setting user: ForgeDevName
-[23:31:24] [Client thread/INFO]: LWJGL Version: 2.9.1
-[23:31:39] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Just Another More Ore Attempt, FMLFileResourcePack:Development tools
-[23:31:40] [Sound Library Loader/INFO]: Sound engine started
-[23:31:42] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[23:31:42] [Client thread/ERROR]: Using missing texture, unable to load endergriefer_jamoa:textures/items/itemSuperbiumBlock.png
+[23:56:22] [main/INFO]: Setting user: ForgeDevName
+[23:56:24] [Client thread/INFO]: LWJGL Version: 2.9.1
+[23:56:36] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Just Another More Ore Attempt, FMLFileResourcePack:Development tools
+[23:56:37] [Sound Library Loader/INFO]: Sound engine started
+[23:56:39] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[23:56:39] [Client thread/ERROR]: Using missing texture, unable to load endergriefer_jamoa:textures/items/itemSuperbiumBlock.png
 java.io.FileNotFoundException: endergriefer_jamoa:textures/items/itemSuperbiumBlock.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -26,9 +26,9 @@ java.io.FileNotFoundException: endergriefer_jamoa:textures/items/itemSuperbiumBl
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_55]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_55]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[23:31:42] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[23:31:43] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Just Another More Ore Attempt, FMLFileResourcePack:Development tools
-[23:31:43] [Client thread/ERROR]: Using missing texture, unable to load endergriefer_jamoa:textures/items/itemSuperbiumBlock.png
+[23:56:39] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[23:56:40] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Just Another More Ore Attempt, FMLFileResourcePack:Development tools
+[23:56:40] [Client thread/ERROR]: Using missing texture, unable to load endergriefer_jamoa:textures/items/itemSuperbiumBlock.png
 java.io.FileNotFoundException: endergriefer_jamoa:textures/items/itemSuperbiumBlock.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -54,78 +54,28 @@ java.io.FileNotFoundException: endergriefer_jamoa:textures/items/itemSuperbiumBl
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_55]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_55]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[23:31:43] [Client thread/INFO]: Created: 512x256 textures/items-atlas
-[23:31:44] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[23:31:44] [Client thread/ERROR]: ########## GL ERROR ##########
-[23:31:44] [Client thread/ERROR]: @ Post startup
-[23:31:44] [Client thread/ERROR]: 1281: Invalid value
-[23:31:45] [Sound Library Loader/INFO]: Sound engine started
-[23:31:46] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
-[23:31:49] [Client thread/INFO]: Deleting level New World
-[23:31:49] [Client thread/INFO]: Attempt 1...
-[23:31:52] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
-[23:31:52] [Server thread/INFO]: Generating keypair
-[23:31:53] [Server thread/INFO]: Converting map!
-[23:31:53] [Server thread/INFO]: Scanning folders...
-[23:31:53] [Server thread/INFO]: Total conversion count is 0
-[23:31:54] [Server thread/INFO]: Preparing start region for level 0
-[23:31:55] [Server thread/INFO]: Preparing spawn area: 1%
-[23:31:56] [Server thread/INFO]: Preparing spawn area: 5%
-[23:31:57] [Server thread/INFO]: Preparing spawn area: 8%
-[23:31:58] [Server thread/INFO]: Preparing spawn area: 13%
-[23:31:59] [Server thread/INFO]: Preparing spawn area: 20%
-[23:32:00] [Server thread/INFO]: Preparing spawn area: 24%
-[23:32:01] [Server thread/INFO]: Preparing spawn area: 29%
-[23:32:02] [Server thread/INFO]: Preparing spawn area: 36%
-[23:32:03] [Server thread/INFO]: Preparing spawn area: 44%
-[23:32:04] [Server thread/INFO]: Preparing spawn area: 52%
-[23:32:05] [Server thread/INFO]: Preparing spawn area: 61%
-[23:32:06] [Server thread/INFO]: Preparing spawn area: 68%
-[23:32:07] [Server thread/INFO]: Preparing spawn area: 76%
-[23:32:08] [Server thread/INFO]: Preparing spawn area: 84%
-[23:32:09] [Server thread/INFO]: Preparing spawn area: 93%
-[23:32:10] [Server thread/INFO]: ForgeDevName[local:E:6b49fa39] logged in with entity id 89 at (-242.5, 65.0, 193.5)
-[23:32:10] [Server thread/INFO]: ForgeDevName joined the game
-[23:32:13] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2559ms behind, skipping 51 tick(s)
-[23:32:16] [Client thread/INFO]: Warning: Clientside chunk ticking took 637 ms
-[23:32:17] [Client thread/INFO]: Warning: Clientside chunk ticking took 325 ms
-[23:32:17] [Client thread/INFO]: Warning: Clientside chunk ticking took 225 ms
-[23:32:17] [Client thread/INFO]: Warning: Clientside chunk ticking took 245 ms
-[23:32:17] [Client thread/INFO]: Warning: Clientside chunk ticking took 204 ms
-[23:32:18] [Client thread/INFO]: Warning: Clientside chunk ticking took 264 ms
-[23:32:18] [Client thread/INFO]: Warning: Clientside chunk ticking took 108 ms
-[23:32:18] [Client thread/INFO]: Warning: Clientside chunk ticking took 209 ms
-[23:32:19] [Client thread/INFO]: Warning: Clientside chunk ticking took 411 ms
-[23:32:22] [Client thread/INFO]: Warning: Clientside chunk ticking took 108 ms
-[23:32:22] [Client thread/INFO]: Warning: Clientside chunk ticking took 102 ms
-[23:32:23] [Client thread/INFO]: Warning: Clientside chunk ticking took 394 ms
-[23:32:23] [Client thread/INFO]: Warning: Clientside chunk ticking took 125 ms
-[23:32:24] [Client thread/INFO]: Warning: Clientside chunk ticking took 182 ms
-[23:32:24] [Client thread/INFO]: Warning: Clientside chunk ticking took 273 ms
-[23:32:25] [Client thread/INFO]: Warning: Clientside chunk ticking took 265 ms
-[23:32:25] [Client thread/INFO]: Warning: Clientside chunk ticking took 229 ms
-[23:32:25] [Client thread/INFO]: Warning: Clientside chunk ticking took 221 ms
-[23:32:25] [Client thread/INFO]: Warning: Clientside chunk ticking took 249 ms
-[23:32:26] [Client thread/INFO]: Warning: Clientside chunk ticking took 199 ms
-[23:32:26] [Client thread/INFO]: Warning: Clientside chunk ticking took 469 ms
-[23:32:29] [Client thread/INFO]: Warning: Clientside chunk ticking took 230 ms
-[23:32:29] [Client thread/INFO]: Warning: Clientside chunk ticking took 147 ms
-[23:32:29] [Client thread/INFO]: Warning: Clientside chunk ticking took 159 ms
-[23:32:30] [Client thread/INFO]: Warning: Clientside chunk ticking took 193 ms
-[23:32:30] [Client thread/INFO]: Warning: Clientside chunk ticking took 145 ms
-[23:32:30] [Client thread/INFO]: Warning: Clientside chunk ticking took 158 ms
-[23:32:30] [Client thread/INFO]: Warning: Clientside chunk ticking took 158 ms
-[23:34:26] [Server thread/INFO]: ForgeDevName has just earned the achievement [Taking Inventory]
-[23:34:26] [Client thread/INFO]: [CHAT] ForgeDevName has just earned the achievement [Taking Inventory]
-[23:35:02] [Client thread/ERROR]: Item entity 19433 has no item?!
-[23:36:52] [Server thread/INFO]: Saving and pausing game...
-[23:36:52] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:36:52] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:36:52] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:36:52] [Server thread/INFO]: Stopping server
-[23:36:52] [Server thread/INFO]: Saving players
-[23:36:52] [Server thread/INFO]: Saving worlds
-[23:36:52] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[23:36:52] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[23:36:52] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[23:36:54] [Client thread/INFO]: Stopping!
+[23:56:40] [Client thread/INFO]: Created: 512x256 textures/items-atlas
+[23:56:40] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[23:56:41] [Client thread/ERROR]: ########## GL ERROR ##########
+[23:56:41] [Client thread/ERROR]: @ Post startup
+[23:56:41] [Client thread/ERROR]: 1281: Invalid value
+[23:56:41] [Sound Library Loader/INFO]: Sound engine started
+[23:56:42] [MCO Availability Checker #1/ERROR]: Couldn't connect to Realms
+[23:56:45] [Server thread/INFO]: Starting integrated minecraft server version 1.7.2
+[23:56:45] [Server thread/INFO]: Generating keypair
+[23:56:46] [Server thread/INFO]: Preparing start region for level 0
+[23:56:47] [Server thread/INFO]: Preparing spawn area: 57%
+[23:56:48] [Server thread/INFO]: ForgeDevName[local:E:4fb82f3e] logged in with entity id 599 at (-236.18788862499375, 65.88749264396283, 199.0699580596959)
+[23:56:48] [Server thread/INFO]: ForgeDevName joined the game
+[23:56:51] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2734ms behind, skipping 54 tick(s)
+[23:59:12] [Server thread/INFO]: Saving and pausing game...
+[23:59:12] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:59:13] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:59:13] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:59:14] [Server thread/INFO]: Stopping server
+[23:59:14] [Server thread/INFO]: Saving players
+[23:59:14] [Server thread/INFO]: Saving worlds
+[23:59:14] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[23:59:14] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[23:59:14] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[23:59:15] [Client thread/INFO]: Stopping!

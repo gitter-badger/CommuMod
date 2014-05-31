@@ -2,11 +2,15 @@ package common.endergriefer.jamoa.entity;
 
 import common.endergriefer.jamoa.food_items.foodItems;
 import cpw.mods.fml.common.registry.EntityRegistry;
-import net.minecraft.entity.*;
+import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.entity.IEntityLivingData;
+import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAILookIdle;
 import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
+import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
@@ -18,7 +22,7 @@ import net.minecraft.world.biome.BiomeGenBase;
 /**
  * Created by noah on 5/27/14.
  */
-public class EntityMiner extends EntityCreature {
+public class EntityMiner extends EntityMob {
     public EntityMiner(World par1World) {
         super(par1World);
         this.tasks.addTask(1, new EntityAISwimming(this));
