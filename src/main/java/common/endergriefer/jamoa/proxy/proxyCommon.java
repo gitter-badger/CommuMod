@@ -8,4 +8,9 @@ public abstract class proxyCommon {
     {
 
     }
+
+    public void registerSounds()
+    {
+
+    }
 }

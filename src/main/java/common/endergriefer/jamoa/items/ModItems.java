@@ -54,6 +54,9 @@ public class ModItems {
     public static Item aradactiteChestplate;
     public static Item aradactiteLeggings;
     public static Item aradactiteBoots;
+    // ==================================================================================
+    // Emerald
+    public static Item ruby;
 
     public static void loadItems()
     {
@@ -200,6 +203,11 @@ public class ModItems {
         aradactiteBoots = new ItemAradactiteArmor(aradactiteArmorMaterial, 3, "aradactiteBoots");
         RegisterHelper.registerItem(aradactiteBoots);
         RegisterHelper.regArmorRecipe(aradactiteBoots, aradactiteIngot, "boots");
+        // ==============================================================================
+        // ******************************************************************************
+        // Ruby items
+        ruby = new ItemRuby();
+        RegisterHelper.registerItem(ruby);
 
 
 

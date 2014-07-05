@@ -3,6 +3,7 @@ package common.endergriefer.jamoa;
 import common.endergriefer.jamoa.blocks.ModBlocks;
 import common.endergriefer.jamoa.entity.EntityMiner;
 import common.endergriefer.jamoa.food_items.foodItems;
+import common.endergriefer.jamoa.help.jamoaEventHandler;
 import common.endergriefer.jamoa.items.ModItems;
 import common.endergriefer.jamoa.proxy.proxyCommon;
 import common.endergriefer.jamoa.world.jamoaworld;
@@ -15,6 +16,9 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EntityList;
+import net.minecraft.entity.EnumCreatureType;
+import net.minecraft.world.biome.BiomeGenBase;
+import net.minecraftforge.common.MinecraftForge;
 
 import java.util.Random;
 
@@ -43,7 +47,7 @@ public class jamoa
     public static proxyCommon proxy;
 
     public static final String MODID = "endergriefer_jamoa";
-    public static final String VERSION = "1.0.1";
+    public static final String VERSION = "1.1.0";
     // Create a new creative tab
     public static CreativeTabs jamoaTab = new CreativeTabsJamoa("jamoaTab");
 
@@ -58,12 +62,15 @@ public class jamoa
         foodItems.loadFood();
         jamoaworld.mainRegistry();
         registerEntity(EntityMiner.class, "miner");
+        EntityRegistry.addSpawn(EntityMiner.class, 100, 1, 5, EnumCreatureType.creature, new BiomeGenBase[]{BiomeGenBase.extremeHills});
         proxy.registerRenderers();
 
     }
     public void init(FMLInitializationEvent event)
     {
         LanguageRegistry.instance().addStringLocalization("itemGroup.jamoaTab", "en_US", "JAMOA");
+        EntityRegistry.addSpawn(EntityMiner.class,4,0,5,EnumCreatureType.creature, new BiomeGenBase[] {BiomeGenBase.extremeHills});
+        MinecraftForge.EVENT_BUS.register(new jamoaEventHandler());
 
     }
     @Mod.Instance(MODID)

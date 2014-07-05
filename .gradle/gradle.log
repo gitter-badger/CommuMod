@@ -8,25 +8,22 @@
 :compileApiJava UP-TO-DATE
 :processApiResources UP-TO-DATE
 :apiClasses UP-TO-DATE
-:sourceMainJava
-:compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
-Note: /Users/noah/Desktop/Modding/forge-1.7.2-10.12.1.1085-src/build/sources/java/common/endergriefer/jamoa/jamoa.java uses or overrides a deprecated API.
-Note: Recompile with -Xlint:deprecation for details.
-Note: /Users/noah/Desktop/Modding/forge-1.7.2-10.12.1.1085-src/build/sources/java/common/endergriefer/jamoa/jamoa.java uses unchecked or unsafe operations.
-Note: Recompile with -Xlint:unchecked for details.
-1 warning
+:sourceMainJava UP-TO-DATE
+:compileJava UP-TO-DATE
+:processResources
+:classes
+:jar
+:compileTestJava UP-TO-DATE
+:processTestResources UP-TO-DATE
+:testClasses UP-TO-DATE
+:test UP-TO-DATE
+:extractUserDev UP-TO-DATE
+:genSrgs SKIPPED
+:reobf
+:assemble
+:check UP-TO-DATE
+:build
 
-:processResources FAILED
+BUILD SUCCESSFUL
 
-FAILURE: Build failed with an exception.
-
-* What went wrong:
-Execution failed for task ':processResources'.
-> Could not copy file '/Users/noah/Desktop/Modding/forge-1.7.2-10.12.1.1085-src/src/main/resources/mcmod.info' to '/Users/noah/Desktop/Modding/forge-1.7.2-10.12.1.1085-src/build/resources/main/mcmod.info'.
-
-* Try:
-Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
-
-BUILD FAILED
-
-Total time: 46.392 secs
+Total time: 39.847 secs

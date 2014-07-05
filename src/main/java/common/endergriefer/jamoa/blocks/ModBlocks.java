@@ -13,6 +13,10 @@ public class ModBlocks {
     // Aradactite
     public static Block aradactiteOre;
     public static Block aradactiteBlock;
+    // Superbium TNT
+    public static Block superbiumTNT;
+    // Miner shack
+    public static Block minerShack;
 
     public static void loadBlocks()
     {
@@ -29,7 +33,12 @@ public class ModBlocks {
         // Aradactite block
         aradactiteBlock = new BlockAradactiteBlock(Material.anvil);
         RegisterHelper.registerBlock(aradactiteBlock);
-
+        // Superbium TNT
+        superbiumTNT = new BlockSuperbiumTNT();
+        RegisterHelper.registerBlock(superbiumTNT);
+        // Instant structures generation
+        minerShack = new BlockMinerShack(Material.rock);
+        RegisterHelper.registerBlock(minerShack);
     }
 
 }

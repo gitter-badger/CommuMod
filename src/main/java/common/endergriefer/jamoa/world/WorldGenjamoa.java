@@ -41,6 +41,13 @@ public class WorldGenjamoa implements IWorldGenerator
 
             new WorldGenMinable(ModBlocks.aradactiteOre, 30).generate(world, rand, randPosX, randPosY, randPosZ);
         }
+
+
+    }
+
+    private void generate(World world, Random random, int x, int y, int z)
+    {
+
     }
 
 

@@ -32,3 +32,8 @@ itemGroup.jamoaTab=JAMOA
 entity.miner.name=Miner
 
 item.superCarrot.name=Super Carrot
+
+tile.superbiumTNT.name=Superbium TNT
+entity.superbiumTNT.name=Superbium TNT
+
+tile.minerShack.name=Instant Miner Shack

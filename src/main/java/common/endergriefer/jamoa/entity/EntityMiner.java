@@ -30,7 +30,7 @@ public class EntityMiner extends EntityMob {
         this.tasks.addTask(3, new EntityAILookIdle(this));
         this.tasks.addTask(4, new EntityAIWander(this, 0.5D));
 
-        EntityRegistry.addSpawn(EntityMiner.class, 100, 1, 5, EnumCreatureType.creature, new BiomeGenBase[]{BiomeGenBase.extremeHills});
+
     }
 
     @Override

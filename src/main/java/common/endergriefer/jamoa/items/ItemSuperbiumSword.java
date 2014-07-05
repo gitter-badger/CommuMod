@@ -36,6 +36,7 @@ public class ItemSuperbiumSword extends ItemSword {
             if (equipped == stack){
                 player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 5, 3));
                 player.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 5, 3));
+
             }
         }
     }
