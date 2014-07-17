@@ -1,0 +1,10 @@
+.gradle/
+build/
+
+*.txt
+
+gradle/
+
+gradlew.*
+gradlew
+build.gradle
