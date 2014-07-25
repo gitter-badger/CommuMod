@@ -62,8 +62,10 @@ public class jamoa
         foodItems.loadFood();
         jamoaworld.mainRegistry();
         registerEntity(EntityMiner.class, "miner");
-        EntityRegistry.addSpawn(EntityMiner.class, 100, 500, 1000, EnumCreatureType.creature, new BiomeGenBase[]{BiomeGenBase.extremeHills});
+
+
         proxy.registerRenderers();
+        proxy.registerEntitySpawn();
 
     }
     public void init(FMLInitializationEvent event)

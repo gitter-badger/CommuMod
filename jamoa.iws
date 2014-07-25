@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0caf3694-617f-4748-87f6-a1ff6c8918ac" name="Default" comment="" />
+    <list default="true" id="60141767-2c88-491c-96b0-8e904978c2ce" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.resources/.projects/Minecraft/.location" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.resources/.root/0.tree" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.epp.usagedata.gathering.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.debug.core/.launches/Client.launch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.debug.core/.launches/Server.launch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/eclipse/.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/entity/EntityMiner.java" afterPath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/entity/EntityMiner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/items/ItemSuperbiumDust.java" afterPath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/items/ItemSuperbiumDust.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/blocks/ModBlocks.java" afterPath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/blocks/ModBlocks.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamoa.iml" afterPath="$PROJECT_DIR$/jamoa.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamoa.ipr" afterPath="$PROJECT_DIR$/jamoa.ipr" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamoa.iws" afterPath="$PROJECT_DIR$/jamoa.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/jamoa.java" afterPath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/jamoa.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/proxy/proxyCommon.java" afterPath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/proxy/proxyCommon.java" />
+    </list>
     <ignored path="jamoa.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -59,11 +83,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EntityMiner.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/entity/EntityMiner.java">
+      <file leaf-file-name="jamoa.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/jamoa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16746412" vertical-offset="0" max-vertical-offset="1500">
-              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1290">
+              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModBlocks.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/blocks/ModBlocks.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3504673" vertical-offset="105" max-vertical-offset="780">
+              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -75,6 +109,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="true" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="tasksExpandState">
@@ -383,7 +420,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="1405612457000" />
+        <entry key="$PROJECT_DIR$" value="1406145937000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -490,7 +527,6 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/de.oceanlabs.mcp/RetroGuard/3.6.6/ffd69fcab06b928cf76144f08b7209ccf0656b6d/RetroGuard-3.6.6.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.opencsv/opencsv/2.3/235993117036d44d126f76db9ea2202ee4884682/opencsv-2.3-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.opencsv/opencsv/2.3/c23708cdb9e80a144db433e23344a788a1fd6599/opencsv-2.3.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.md-5/SpecialSource/1.7-SNAPSHOT/e54181ea1a9fe7e1ce80bd9972763413a5c98173/SpecialSource-1.7-SNAPSHOT.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jponge/lzma-java/1.3/c0f18880fb29c7bfc088a6e114c66fe30a5e8df2/lzma-java-1.3-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.jponge/lzma-java/1.3/a25db9d4d385ccda4825ae1b47a7a61d86e595af/lzma-java-1.3.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sourceforge.argo/argo/3.4/2b39738e65594d8487924a946dee0eae35af87ce/argo-3.4-sources.jar" />
@@ -516,6 +552,8 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.jdt/org.eclipse.jdt.core/3.10.0.v20131029-1755/9d27d8ac8d6be6b10dffd5101d5e9b893455f0b0/org.eclipse.jdt.core-3.10.0.v20131029-1755.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.core/jobs/3.5.300-v20130429-1813/66f1342db8d674030d85df691df50c205a1884f2/jobs-3.5.300-v20130429-1813-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.core/jobs/3.5.300-v20130429-1813/69a54a3766004fc09222e2be6da544dde50ba50f/jobs-3.5.300-v20130429-1813.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/36b6a585c0f0c63bd85fb04db0dcb7b217298956/guava-15.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/ed727a8d9f247e2050281cb083f1c77b09dcb5cd/guava-15.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.core/contenttype/3.4.200-v20130326-1255/2581a17631ce5484a5add1590b899653d1358d28/contenttype-3.4.200-v20130326-1255-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.core/contenttype/3.4.200-v20130326-1255/335ae99862a28b05778fbd10fbf65e000ae3cfe/contenttype-3.4.200-v20130326-1255.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.core/resources/3.2.1-R32x_v20060914/af7df4abd126286417df7e36feb35f956f0908b8/resources-3.2.1-R32x_v20060914.jar" />
@@ -545,8 +583,6 @@
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.equinox/app/1.3.100-v20130327-1442/a3a24b7cb84133a820864141172d98b02a7e1a4f/app-1.3.100-v20130327-1442-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.equinox/app/1.3.100-v20130327-1442/ae6b3f37e295b65ecbbddf356d06262a07f281cf/app-1.3.100-v20130327-1442.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.update/configurator/3.2.100-v20070615/1e57b63cb6f349bd96d2d4a6e3679e5838581bdd/configurator-3.2.100-v20070615.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/36b6a585c0f0c63bd85fb04db0dcb7b217298956/guava-15.0-sources.jar" />
-                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/ed727a8d9f247e2050281cb083f1c77b09dcb5cd/guava-15.0.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.6/9cd14a61d7aa7d554f251ef285a6f2c65caf7b65/jopt-simple-4.6-sources.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.6/306816fb57cf94f108a43c95731b08934dcae15c/jopt-simple-4.6.jar" />
                             <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse/osgi/3.9.1-v20140110-1610/ea5bc7ecbbdfc2394196983adcab6125e4bc2757/osgi-3.9.1-v20140110-1610-sources.jar" />
@@ -564,50 +600,90 @@
               <option name="name" value="jamoa" />
               <option name="projectBuildClasspath">
                 <list>
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/ant-1.9.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/ant-launcher-1.9.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/gradle-base-services-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/gradle-base-services-groovy-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/gradle-cli-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/gradle-core-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/gradle-docs-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/gradle-launcher-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/gradle-messaging-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/gradle-native-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/gradle-open-api-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/gradle-resources-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/gradle-tooling-api-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/gradle-ui-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/gradle-wrapper-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/groovy-all-2.3.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/ant-antlr-1.9.3.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-announce-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-antlr-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-build-comparison-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-build-init-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-code-quality-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-core-impl-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-cpp-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-diagnostics-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-ear-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-ide-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-ivy-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-jacoco-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-javascript-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-jetty-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-language-base-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-language-jvm-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-maven-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-osgi-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-plugin-use-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-plugins-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-publish-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-reporting-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-resources-http-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-scala-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-signing-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/gradle-sonar-2.0.jar" />
-                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-bin/5h57m9vra0mjv9qs45oqtsb5c0/gradle-2.0/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/core-impl" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/cpp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/jetty" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/language-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/open-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/sonar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/ui" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/ant-1.9.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/ant-launcher-1.9.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/gradle-base-services-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/gradle-base-services-groovy-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/gradle-cli-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/gradle-core-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/gradle-docs-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/gradle-launcher-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/gradle-messaging-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/gradle-native-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/gradle-open-api-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/gradle-resources-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/gradle-tooling-api-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/gradle-ui-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/gradle-wrapper-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/groovy-all-2.3.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/ant-antlr-1.9.3.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-announce-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-antlr-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-build-comparison-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-build-init-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-code-quality-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-core-impl-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-cpp-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-diagnostics-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-ear-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-ide-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-ivy-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-jacoco-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-javascript-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-jetty-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-language-base-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-language-jvm-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-maven-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-osgi-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-plugin-use-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-plugins-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-publish-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-reporting-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-resources-http-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-scala-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-signing-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/gradle-sonar-2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-2.0-all/7rd4e4rcg4riqi0j6j508m2lbk/gradle-2.0/lib/plugins/ivy-2.2.0.jar" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
                   <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
                 </list>
@@ -623,8 +699,8 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="9" />
-    <option name="y" value="29" />
+    <option name="x" value="10" />
+    <option name="y" value="31" />
     <option name="width" value="1260" />
     <option name="height" value="760" />
   </component>
@@ -748,7 +824,7 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
+              <option name="myItemId" value="blocks" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -874,39 +950,39 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0caf3694-617f-4748-87f6-a1ff6c8918ac" name="Default" comment="" />
-      <created>1405615655127</created>
-      <updated>1405615655127</updated>
+      <changelist id="60141767-2c88-491c-96b0-8e904978c2ce" name="Default" comment="" />
+      <created>1406168798432</created>
+      <updated>1406168798432</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="9" y="29" width="1260" height="760" extended-state="0" />
+    <frame x="10" y="31" width="1260" height="760" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958949" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -930,10 +1006,34 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/entity/EntityMiner.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/jamoa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16746412" vertical-offset="0" max-vertical-offset="1500">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1290">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/blocks/ModBlocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="780">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/jamoa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="990">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/blocks/ModBlocks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3504673" vertical-offset="105" max-vertical-offset="780">
+          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
           <folding />
         </state>
       </provider>

@@ -1,15 +1,8 @@
 package common.endergriefer.jamoa.entity;
 
 import common.endergriefer.jamoa.food_items.foodItems;
-import cpw.mods.fml.common.registry.EntityRegistry;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.entity.EnumCreatureType;
-import net.minecraft.entity.IEntityLivingData;
-import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.ai.EntityAILookIdle;
-import net.minecraft.entity.ai.EntityAISwimming;
-import net.minecraft.entity.ai.EntityAIWander;
-import net.minecraft.entity.ai.EntityAIWatchClosest;
+import net.minecraft.entity.*;
+import net.minecraft.entity.ai.*;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.player.EntityPlayer;
@@ -17,7 +10,6 @@ import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.world.EnumDifficulty;
 import net.minecraft.world.World;
-import net.minecraft.world.biome.BiomeGenBase;
 
 /**
  * Created by noah on 5/27/14.
@@ -28,10 +20,12 @@ public class EntityMiner extends EntityMob {
         this.tasks.addTask(1, new EntityAISwimming(this));
         this.tasks.addTask(2, new EntityAIWatchClosest(this, EntityPlayer.class, 8.0F));
         this.tasks.addTask(3, new EntityAILookIdle(this));
-        this.tasks.addTask(4, new EntityAIWander(this, 0.5D));
+        this.tasks.addTask(4, new EntityAIWander(this, 1.0D));
+        this.tasks.addTask(5, new EntityAIAttackOnCollide(this, 1.0D, true));
+
         this.addRandomArmor();
-        this.setSprinting(true);
-        EntityRegistry.addSpawn("entityMiner",50,5,10, EnumCreatureType.creature, BiomeGenBase.extremeHills);
+        this.setSprinting(false);
+
 
 
 

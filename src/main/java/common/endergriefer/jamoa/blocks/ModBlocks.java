@@ -18,6 +18,7 @@ public class ModBlocks {
     // Miner shack
     public static Block minerShack;
 
+
     public static void loadBlocks()
     {
         //Load all necessary blocks here...
@@ -39,6 +40,9 @@ public class ModBlocks {
         // Instant structures generation
         minerShack = new BlockMinerShack(Material.rock);
         RegisterHelper.registerBlock(minerShack);
+        // ******************************************************************************
+
     }
+
 
 }
