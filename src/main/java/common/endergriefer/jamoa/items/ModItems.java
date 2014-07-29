@@ -55,7 +55,7 @@ public class ModItems {
     public static Item aradactiteLeggings;
     public static Item aradactiteBoots;
     // ==================================================================================
-    // Emerald
+    // Ruby
     public static Item ruby;
 
     public static void loadItems()
@@ -206,8 +206,8 @@ public class ModItems {
         // ==============================================================================
         // ******************************************************************************
         // Ruby items
-        ruby = new ItemRuby();
-        RegisterHelper.registerItem(ruby);
+//        ruby = new ItemRuby();
+//        RegisterHelper.registerItem(ruby);
 
 
 

@@ -7,6 +7,7 @@ import common.endergriefer.jamoa.help.jamoaEventHandler;
 import common.endergriefer.jamoa.items.ModItems;
 import common.endergriefer.jamoa.proxy.proxyCommon;
 import common.endergriefer.jamoa.world.jamoaworld;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
@@ -20,13 +21,20 @@ import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.MinecraftForge;
 
+import net.minecraftforge.common.config.Configuration;
 import java.util.Random;
 
 
-@Mod(modid = jamoa.MODID, version = jamoa.VERSION)
+@Mod(modid = jamoa.MODID, version = jamoa.VERSION, guiFactory = "com.endergriefer.jamoa.ModGuiFactory")
+
+
+
 
 public class jamoa
 {
+
+
+
 
 
     public static void registerEntity(Class entityClass, String name)
@@ -51,8 +59,18 @@ public class jamoa
     // Create a new creative tab
     public static CreativeTabs jamoaTab = new CreativeTabsJamoa("jamoaTab");
 
+    public static Configuration configFile;
 
-    
+    public static int myConfigInt = 32;
+
+    public static String myConfigString = "Hello World";
+
+    public static boolean myConfigBool = false;
+
+
+    @Mod.Instance(MODID)
+    public static jamoa instance;
+
 
     @EventHandler
     public void preinit(FMLPreInitializationEvent event) {
@@ -67,15 +85,31 @@ public class jamoa
         proxy.registerRenderers();
         proxy.registerEntitySpawn();
 
+        configFile = new Configuration(event.getSuggestedConfigurationFile());
+        syncConfig();
+
     }
+
+
+
     public void init(FMLInitializationEvent event)
     {
         LanguageRegistry.instance().addStringLocalization("itemGroup.jamoaTab", "en_US", "JAMOA");
         EntityRegistry.addSpawn(EntityMiner.class,4,0,5,EnumCreatureType.creature, new BiomeGenBase[] {BiomeGenBase.extremeHills});
         MinecraftForge.EVENT_BUS.register(new jamoaEventHandler());
+        FMLCommonHandler.instance().bus().register(instance);
 
     }
-    @Mod.Instance(MODID)
-    public static jamoa instance;
+
+
+    public static void syncConfig() {
+        myConfigInt = configFile.getInt("My Config Integer", Configuration.CATEGORY_GENERAL, myConfigInt, 0, Integer.MAX_VALUE, "An Integer!");
+        myConfigString = configFile.getString("My Config String", Configuration.CATEGORY_GENERAL, myConfigString, "A String!");
+        myConfigBool = configFile.getBoolean("My Config Bool", Configuration.CATEGORY_GENERAL, myConfigBool, "A Boolean!");
+
+        if(configFile.hasChanged())
+            configFile.save();
+    }
+
 
 }

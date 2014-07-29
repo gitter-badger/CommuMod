@@ -17,6 +17,8 @@ public class ModBlocks {
     public static Block superbiumTNT;
     // Miner shack
     public static Block minerShack;
+    // Superbium torch
+    public static Block superbiumTorch;
 
 
     public static void loadBlocks()
@@ -41,6 +43,9 @@ public class ModBlocks {
         minerShack = new BlockMinerShack(Material.rock);
         RegisterHelper.registerBlock(minerShack);
         // ******************************************************************************
+        // Superbium torch
+        superbiumTorch = new BlockSuperbiumTorch();
+        RegisterHelper.registerBlock(superbiumTorch);
 
     }
 
