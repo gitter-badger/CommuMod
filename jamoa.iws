@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60141767-2c88-491c-96b0-8e904978c2ce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/blocks/ModBlocks.java" afterPath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/blocks/ModBlocks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/items/ModItems.java" afterPath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/items/ModItems.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/ModGuiFactory.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jamoa.iws" afterPath="$PROJECT_DIR$/jamoa.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/jamoa.java" afterPath="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/jamoa.java" />
     </list>
@@ -64,21 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jamoa.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="jamoa.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/jamoa.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1800">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModGuiFactory.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/ModGuiFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45310014" vertical-offset="105" max-vertical-offset="1395">
-              <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+            <state vertical-scroll-proportion="1.3593005" vertical-offset="0" max-vertical-offset="1185">
+              <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -681,10 +670,10 @@
         <option value="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/blocks/ModBlocks.java" />
         <option value="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/help/RegisterHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/items/ModItems.java" />
-        <option value="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/jamoa.java" />
         <option value="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/blocks/BlockSuperbiumTorch.java" />
         <option value="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/ModConfigGui.java" />
         <option value="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/ModGuiFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/jamoa.java" />
       </list>
     </option>
   </component>
@@ -1305,7 +1294,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="31" width="1260" height="760" extended-state="0" />
+    <frame x="10" y="31" width="1260" height="760" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1352,7 +1341,9 @@
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1363,14 +1354,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/ModGuiFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="1395">
-          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1395,14 +1378,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/ModGuiFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="1650">
-          <caret line="48" column="58" selection-start-line="48" selection-start-column="58" selection-end-line="48" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -1467,18 +1442,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/jamoa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1470">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/items/ModItems.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.68899524" vertical-offset="2598" max-vertical-offset="3225">
           <caret line="209" column="44" selection-start-line="209" selection-start-column="44" selection-end-line="209" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1549,10 +1517,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/ModGuiFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/CreativeTabsJamoa.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45310014" vertical-offset="105" max-vertical-offset="1395">
-          <caret line="43" column="20" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.1635514" vertical-offset="0" max-vertical-offset="642">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/endergriefer/jamoa/jamoa.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3593005" vertical-offset="0" max-vertical-offset="1185">
+          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
           <folding />
         </state>
       </provider>

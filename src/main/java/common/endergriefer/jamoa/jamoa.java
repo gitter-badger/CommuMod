@@ -21,11 +21,10 @@ import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.MinecraftForge;
 
-import net.minecraftforge.common.config.Configuration;
 import java.util.Random;
 
 
-@Mod(modid = jamoa.MODID, version = jamoa.VERSION, guiFactory = "com.endergriefer.jamoa.ModGuiFactory")
+@Mod(modid = jamoa.MODID, version = jamoa.VERSION)
 
 
 
@@ -59,15 +58,6 @@ public class jamoa
     // Create a new creative tab
     public static CreativeTabs jamoaTab = new CreativeTabsJamoa("jamoaTab");
 
-    public static Configuration configFile;
-
-    public static int myConfigInt = 32;
-
-    public static String myConfigString = "Hello World";
-
-    public static boolean myConfigBool = false;
-
-
     @Mod.Instance(MODID)
     public static jamoa instance;
 
@@ -85,8 +75,6 @@ public class jamoa
         proxy.registerRenderers();
         proxy.registerEntitySpawn();
 
-        configFile = new Configuration(event.getSuggestedConfigurationFile());
-        syncConfig();
 
     }
 
@@ -102,14 +90,6 @@ public class jamoa
     }
 
 
-    public static void syncConfig() {
-        myConfigInt = configFile.getInt("My Config Integer", Configuration.CATEGORY_GENERAL, myConfigInt, 0, Integer.MAX_VALUE, "An Integer!");
-        myConfigString = configFile.getString("My Config String", Configuration.CATEGORY_GENERAL, myConfigString, "A String!");
-        myConfigBool = configFile.getBoolean("My Config Bool", Configuration.CATEGORY_GENERAL, myConfigBool, "A Boolean!");
-
-        if(configFile.hasChanged())
-            configFile.save();
-    }
 
 
 }
