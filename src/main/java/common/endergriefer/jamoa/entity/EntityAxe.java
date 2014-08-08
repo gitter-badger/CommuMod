@@ -10,7 +10,8 @@ import net.minecraft.world.World;
  * Created by noah on 6/13/14.
  */
 public class EntityAxe extends EntityThrowable {
-    public EntityAxe(World world, double par2, double par4, double par6) {
+    public EntityAxe(World world, double par2, double par4, double par6)
+    {
         super(world, par2, par4, par6);
     }
     public EntityAxe(World par1World, EntityLivingBase par2EntityLivingBase)
@@ -66,7 +67,7 @@ public class EntityAxe extends EntityThrowable {
 * around after exploding, the last parameter
 * is if it should set neighboring blocks on fire
 */
-            this.worldObj.newExplosion(this, mop.blockX, mop.blockY, mop.blockZ, 2.0F, true, true);
+            this.worldObj.newExplosion(this, mop.blockX, mop.blockY, mop.blockZ, 4.0F, true, false);
         }
 //If the Server is online and works, kill this entity
         if (!this.worldObj.isRemote)

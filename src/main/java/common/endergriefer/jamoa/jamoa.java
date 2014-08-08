@@ -28,16 +28,12 @@ import java.util.Random;
 
 
 
-
 public class jamoa
 {
 
-
-
-
-
     public static void registerEntity(Class entityClass, String name)
     {
+
         int entityID = EntityRegistry.findGlobalUniqueEntityId();
         long seed = name.hashCode();
         Random rand = new Random(seed);
@@ -53,8 +49,8 @@ public class jamoa
     @SidedProxy(clientSide="common.endergriefer.jamoa.proxy.proxyClient", serverSide="common.endergriefer.jamoa.proxy.proxyCommon")
     public static proxyCommon proxy;
 
-    public static final String MODID = "endergriefer_jamoa";
-    public static final String VERSION = "1.1.1";
+    public static final String MODID = "jamoa";
+    public static final String VERSION = "1.1.1b";
     // Create a new creative tab
     public static CreativeTabs jamoaTab = new CreativeTabsJamoa("jamoaTab");
 
@@ -83,7 +79,7 @@ public class jamoa
     public void init(FMLInitializationEvent event)
     {
         LanguageRegistry.instance().addStringLocalization("itemGroup.jamoaTab", "en_US", "JAMOA");
-        EntityRegistry.addSpawn(EntityMiner.class,4,0,5,EnumCreatureType.creature, new BiomeGenBase[] {BiomeGenBase.extremeHills});
+        EntityRegistry.addSpawn(EntityMiner.class,10,1,5,EnumCreatureType.creature, new BiomeGenBase[] {BiomeGenBase.extremeHills});
         MinecraftForge.EVENT_BUS.register(new jamoaEventHandler());
         FMLCommonHandler.instance().bus().register(instance);
 
