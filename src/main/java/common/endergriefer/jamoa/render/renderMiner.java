@@ -9,10 +9,10 @@ import net.minecraft.util.ResourceLocation;
 /**
  * Created by noah on 5/27/14.
  */
-public class renderTest extends RenderBiped {
+public class renderMiner extends RenderBiped {
     private static final ResourceLocation textureLocation = new ResourceLocation(Reference.MODID + ":" + "models/miner.png");
 
-    public renderTest(ModelBiped model, float shadowSize)
+    public renderMiner(ModelBiped model, float shadowSize)
     {
         super(model, shadowSize);
     }

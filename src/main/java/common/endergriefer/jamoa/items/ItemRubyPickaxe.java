@@ -2,20 +2,16 @@ package common.endergriefer.jamoa.items;
 
 import common.endergriefer.jamoa.help.Reference;
 import common.endergriefer.jamoa.jamoa;
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemPickaxe;
 
 /**
- * Created by noah on 6/13/14.
+ * Created by noah on 8/8/14.
  */
-public class ItemRuby extends Item {
-
-    public ItemRuby()
-    {
-        super();
-        setUnlocalizedName("ruby");
+public class ItemRubyPickaxe extends ItemPickaxe {
+    public ItemRubyPickaxe(ToolMaterial material) {
+        super(material);
+        setUnlocalizedName("rubyPickaxe");
         setTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
         setCreativeTab(jamoa.jamoaTab);
-
     }
-
 }

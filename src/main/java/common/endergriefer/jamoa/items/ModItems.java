@@ -55,8 +55,14 @@ public class ModItems {
     public static Item aradactiteLeggings;
     public static Item aradactiteBoots;
     // ==================================================================================
-    // Emerald
+    // Ruby
     public static Item ruby;
+    static Item.ToolMaterial rubyToolMaterial = EnumHelper.addToolMaterial("rubyToolMaterial",3,1800,5.0F,8.25F,100);
+    public static Item rubyPick;
+    public static Item rubyAxe;
+    public static Item rubyShovel;
+    public static Item rubyHoe;
+    public static Item rubySword;
 
     public static void loadItems()
     {
@@ -208,7 +214,26 @@ public class ModItems {
         // Ruby items
         ruby = new ItemRuby();
         RegisterHelper.registerItem(ruby);
+        // Ruby tools
+        rubyPick = new ItemRubyPickaxe(rubyToolMaterial);
+        RegisterHelper.registerItem(rubyPick);
+        RegisterHelper.regToolRecipe(rubyPick,ruby,Items.stick,"pickaxe");
 
+        rubyAxe = new ItemRubyAxe(rubyToolMaterial);
+        RegisterHelper.registerItem(rubyAxe);
+        RegisterHelper.regToolRecipe(rubyAxe,ruby,Items.stick,"axe");
+
+        rubyShovel = new ItemRubyShovel(rubyToolMaterial);
+        RegisterHelper.registerItem(rubyShovel);
+        RegisterHelper.regToolRecipe(rubyShovel,ruby,Items.stick,"shovel");
+
+        rubyHoe = new ItemRubyHoe(rubyToolMaterial);
+        RegisterHelper.registerItem(rubyHoe);
+        RegisterHelper.regToolRecipe(rubyHoe,ruby,Items.stick,"hoe");
+
+        rubySword = new ItemRubySword(rubyToolMaterial);
+        RegisterHelper.registerItem(rubySword);
+        RegisterHelper.regToolRecipe(rubySword,ruby,Items.stick,"sword");
 
 
     }
