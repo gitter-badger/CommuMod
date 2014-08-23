@@ -22,6 +22,7 @@ public class ModBlocks {
 
     // Ruby
     public static Block rubyOre;
+    public static Block rubyBlock;
 
 
     public static void loadBlocks()
@@ -53,6 +54,9 @@ public class ModBlocks {
         // Ruby ore
         rubyOre = new BlockRubyOre(Material.rock);
         RegisterHelper.registerBlock(rubyOre);
+
+        rubyBlock = new BlockRuby(Material.rock);
+        RegisterHelper.registerBlock(rubyBlock);
 
     }
 
