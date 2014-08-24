@@ -46,3 +46,7 @@ item.rubyAxe.name=Ruby Axe
 item.rubySword.name=Ruby Sword
 tile.rubyOre.name=Ruby Ore
 tile.rubyBlock.name=Ruby Block
+item.rubyHelmet.name=Ruby Helmet
+item.rubyChestplate.name=Ruby Chestplate
+item.rubyLeggings.name=Ruby Leggings
+item.rubyBoots.name=Ruby Boots

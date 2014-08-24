@@ -63,6 +63,14 @@ public class ModItems {
     public static Item rubyShovel;
     public static Item rubyHoe;
     public static Item rubySword;
+    //Ruby Armor
+    static ItemArmor.ArmorMaterial rubyArmorMaterial = EnumHelper.addArmorMaterial("rubyArmorMaterial",700,new int[]{2,3,3,3},15);
+    public static Item rubyChestplate;
+    public static Item rubyHelmet;
+    public static Item rubyLeggings;
+    public static Item rubyBoots;
+
+
 
     public static void loadItems()
     {
@@ -234,6 +242,24 @@ public class ModItems {
         rubySword = new ItemRubySword(rubyToolMaterial);
         RegisterHelper.registerItem(rubySword);
         RegisterHelper.regToolRecipe(rubySword,ruby,Items.stick,"sword");
+
+        /* Armor */
+
+        rubyHelmet = new ItemRubyArmor(rubyArmorMaterial,0,"rubyHelmet");
+        RegisterHelper.registerItem(rubyHelmet);
+        RegisterHelper.regArmorRecipe(rubyHelmet,ruby,"helmet");
+
+        rubyChestplate = new ItemRubyArmor(rubyArmorMaterial,1,"rubyChestplate");
+        RegisterHelper.registerItem(rubyChestplate);
+        RegisterHelper.regArmorRecipe(rubyChestplate,ruby,"chestplate");
+
+        rubyLeggings = new ItemRubyArmor(rubyArmorMaterial,2,"rubyLeggings");
+        RegisterHelper.registerItem(rubyLeggings);
+        RegisterHelper.regArmorRecipe(rubyLeggings,ruby,"rubyLeggings");
+
+        rubyBoots = new ItemRubyArmor(rubyArmorMaterial,3,"rubyBoots");
+        RegisterHelper.registerItem(rubyBoots);
+        RegisterHelper.regArmorRecipe(rubyBoots,ruby,"boots");
 
 
     }

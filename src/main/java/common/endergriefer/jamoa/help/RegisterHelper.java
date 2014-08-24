@@ -1,11 +1,15 @@
 package common.endergriefer.jamoa.help;
 
 
-
+import common.endergriefer.jamoa.jamoa;
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
+import net.minecraft.entity.EntityList;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+
+import java.util.Random;
 
 
 public class RegisterHelper {
@@ -118,5 +122,20 @@ public class RegisterHelper {
     }
 
     // ********************************************************************************************
+
+    public static void registerEntity(Class entityClass, String name)
+    {
+
+        int entityID = EntityRegistry.findGlobalUniqueEntityId();
+        long seed = name.hashCode();
+        Random rand = new Random(seed);
+        int primaryColor = rand.nextInt() * 16777215;
+        int secondaryColor = rand.nextInt() * 16777215;
+
+        EntityRegistry.registerGlobalEntityID(entityClass, name, entityID);
+        EntityRegistry.registerModEntity(entityClass, name, entityID, jamoa.instance, 64, 1, true);
+        EntityList.entityEggs.put(Integer.valueOf(entityID), new EntityList.EntityEggInfo(entityID, primaryColor, secondaryColor));
+
+    }
 
 }
