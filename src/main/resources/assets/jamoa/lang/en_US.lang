@@ -1,0 +1,52 @@
+tile.superbiumOre.name=Superbium Ore
+tile.superbiumBlock.name=Superbium Block
+item.superbiumIngot.name=Superbium Ingot
+item.superbiumDust.name=Superbium Dust
+item.superbiumPick.name=Superium Pickaxe
+item.superbiumAxe.name=Superbium Axe
+item.superbiumShovel.name=Superbium Shovel
+item.superbiumHoe.name=Superbium Hoe
+item.superbiumSword.name=Superbium Sword
+item.superbiumHelmet.name=Superbium Helmet
+item.superbiumChestplate.name=Superbium Chestplate
+item.superbiumLeggings.name=Superbium Leggings
+item.superbiumBoots.name=Superbium Boots
+
+
+tile.aradactiteOre.name=Aradactite Ore
+tile.aradactiteBlock.name=Aradactite Block
+item.aradactiteIngot.name=Aradactite Ingot
+item.aradactiteDust.name=Aradactite Dust
+item.aradactitePick.name=Aradactite Pickaxe
+item.aradactiteAxe.name=Aradactite Axe
+item.aradactiteShovel.name=Aradactite Shovel
+item.aradactiteHoe.name=Aradactite Hoe
+item.aradactiteSword.name=Aradactite Sword
+item.aradactiteHelmet.name=Aradactite Helmet
+item.aradactiteChestplate.name=Aradactite Chestplate
+item.aradactiteLeggings.name=Aradactite Leggings
+item.aradactiteBoots.name=Aradactite Boots
+
+itemGroup.jamoaTab=JAMOA
+
+entity.miner.name=Miner
+
+item.superCarrot.name=Super Carrot
+
+tile.superbiumTNT.name=Superbium TNT
+entity.superbiumTNT.name=Superbium TNT
+tile.superbiumTorch.name=Superbium Torch
+
+tile.minerShack.name=Instant Miner Shack
+
+item.rubyPickaxe.name=Ruby Pickaxe
+item.rubyShovel.name=Ruby Shovel
+item.rubyHoe.name=Ruby Hoe
+item.rubyAxe.name=Ruby Axe
+item.rubySword.name=Ruby Sword
+tile.rubyOre.name=Ruby Ore
+tile.rubyBlock.name=Ruby Block
+item.rubyHelmet.name=Ruby Helmet
+item.rubyChestplate.name=Ruby Chestplate
+item.rubyLeggings.name=Ruby Leggings
+item.rubyBoots.name=Ruby Boots

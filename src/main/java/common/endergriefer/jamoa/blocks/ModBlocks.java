@@ -17,6 +17,12 @@ public class ModBlocks {
     public static Block superbiumTNT;
     // Miner shack
     public static Block minerShack;
+    // Superbium torch
+    public static Block superbiumTorch;
+
+    // Ruby
+    public static Block rubyOre;
+    public static Block rubyBlock;
 
 
     public static void loadBlocks()
@@ -41,6 +47,16 @@ public class ModBlocks {
         minerShack = new BlockMinerShack(Material.rock);
         RegisterHelper.registerBlock(minerShack);
         // ******************************************************************************
+        // Superbium torch
+        superbiumTorch = new BlockSuperbiumTorch();
+        RegisterHelper.registerBlock(superbiumTorch);
+        // ******************************************************************************
+        // Ruby ore
+        rubyOre = new BlockRubyOre(Material.rock);
+        RegisterHelper.registerBlock(rubyOre);
+
+        rubyBlock = new BlockRuby(Material.rock);
+        RegisterHelper.registerBlock(rubyBlock);
 
     }
 

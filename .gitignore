@@ -1,8 +1,13 @@
-.gradle/
-build/
+#.gradle/
+#build/
 
 *.txt
 
 
 gradlew.*
 
+
+/jamoa.iws
+
+/jamoa.iml
+/jamoa.ipr

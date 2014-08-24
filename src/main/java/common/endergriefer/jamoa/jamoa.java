@@ -7,6 +7,7 @@ import common.endergriefer.jamoa.help.jamoaEventHandler;
 import common.endergriefer.jamoa.items.ModItems;
 import common.endergriefer.jamoa.proxy.proxyCommon;
 import common.endergriefer.jamoa.world.jamoaworld;
+import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
@@ -21,16 +22,18 @@ import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraftforge.common.MinecraftForge;
 
 import java.util.Random;
-
+//TODO Add aradactite and superbium golems
 
 @Mod(modid = jamoa.MODID, version = jamoa.VERSION)
+
+
 
 public class jamoa
 {
 
-
     public static void registerEntity(Class entityClass, String name)
     {
+
         int entityID = EntityRegistry.findGlobalUniqueEntityId();
         long seed = name.hashCode();
         Random rand = new Random(seed);
@@ -46,13 +49,14 @@ public class jamoa
     @SidedProxy(clientSide="common.endergriefer.jamoa.proxy.proxyClient", serverSide="common.endergriefer.jamoa.proxy.proxyCommon")
     public static proxyCommon proxy;
 
-    public static final String MODID = "endergriefer_jamoa";
-    public static final String VERSION = "1.1.1";
+    public static final String MODID = "jamoa";
+    public static final String VERSION = "1.3.0";
     // Create a new creative tab
     public static CreativeTabs jamoaTab = new CreativeTabsJamoa("jamoaTab");
 
+    @Mod.Instance(MODID)
+    public static jamoa instance;
 
-    
 
     @EventHandler
     public void preinit(FMLPreInitializationEvent event) {
@@ -64,18 +68,25 @@ public class jamoa
         registerEntity(EntityMiner.class, "miner");
 
 
+
         proxy.registerRenderers();
         proxy.registerEntitySpawn();
 
+
     }
+
+
+
     public void init(FMLInitializationEvent event)
     {
         LanguageRegistry.instance().addStringLocalization("itemGroup.jamoaTab", "en_US", "JAMOA");
-        EntityRegistry.addSpawn(EntityMiner.class,4,0,5,EnumCreatureType.creature, new BiomeGenBase[] {BiomeGenBase.extremeHills});
+        EntityRegistry.addSpawn(EntityMiner.class,10,1,5,EnumCreatureType.creature, new BiomeGenBase[] {BiomeGenBase.extremeHills});
         MinecraftForge.EVENT_BUS.register(new jamoaEventHandler());
+        FMLCommonHandler.instance().bus().register(instance);
 
     }
-    @Mod.Instance(MODID)
-    public static jamoa instance;
+
+
+
 
 }

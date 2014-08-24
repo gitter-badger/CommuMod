@@ -26,7 +26,7 @@ public class WorldGenjamoa implements IWorldGenerator
 
     private void generateSurface(World world, Random rand, int chunkX, int chunkZ)
     {
-        for(int i = 0; i < 2; i++) {
+        for(int i = 0; i < 4; i++) {
             int randPosX = chunkX + rand.nextInt(16);
             int randPosY = rand.nextInt(60);
             int randPosZ = chunkZ + rand.nextInt(16);
@@ -34,12 +34,21 @@ public class WorldGenjamoa implements IWorldGenerator
             new WorldGenMinable(ModBlocks.superbiumOre, 15).generate(world, rand, randPosX, randPosY, randPosZ);
         }
 
-        for (int j = 0; j < 2; j++) {
+        for (int j = 0; j < 4; j++) {
             int randPosX = chunkX + rand.nextInt(16);
             int randPosY = rand.nextInt(256);
             int randPosZ = chunkZ + rand.nextInt(16);
 
             new WorldGenMinable(ModBlocks.aradactiteOre, 30).generate(world, rand, randPosX, randPosY, randPosZ);
+        }
+
+        for (int r = 0; r < 4; r++)
+        {
+            int randPosX = chunkX + rand.nextInt(16);
+            int randPosY = rand.nextInt(56);
+            int randPosZ = chunkZ + rand.nextInt(16);
+
+            new WorldGenMinable(ModBlocks.rubyOre, 30).generate(world, rand, randPosX, randPosY, randPosZ);
         }
 
 
