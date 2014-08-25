@@ -1,13 +1,7 @@
-#.gradle/
-#build/
+# Created by .gitignore support plugin (hsz.mobi)
 
-*.txt
+CommuMod.iml
 
+CommuMod.ipr
 
-gradlew.*
-
-
-/jamoa.iws
-
-/jamoa.iml
-/jamoa.ipr
+CommuMod.iws
