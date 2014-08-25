@@ -6,3 +6,9 @@ build/
 
 gradlew.*
 
+
+/CommuMod.iml
+
+/CommuMod.ipr
+
+/CommuMod.iws
