@@ -1,2 +1,2 @@
-JAMOA [![Build Status](https://travis-ci.org/KaminoCoding/JAMOA.svg?branch=V.-1.2.0)](https://travis-ci.org/KaminoCoding/JAMOA)
+CommuMod [![Build Status](https://travis-ci.org/KaminoCoding/CommuMod.svg)](https://travis-ci.org/KaminoCoding/CommuMod)
 =====
