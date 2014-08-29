@@ -1,11 +1,11 @@
 [
 {
-  "modid": "endergriefer_jamoa",
-  "name": "Just Another More Ore Attempt",
-  "description": "Another of many attempts at adding more ores and mining related items",
+  "modid": "${MODID}",
+  "name": "Community Mod",
+  "description": "",
   "version": "${version}",
   "mcversion": "1.7.10",
-  "url": "kaminocoding.github.io/JAMOA.html",
+  "url": "kaminocoding.github.io/CommuMod/",
   "updateUrl": "",
   "authorList": ["Endergreifer153"],
   "credits": "",

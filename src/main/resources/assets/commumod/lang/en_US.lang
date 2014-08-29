@@ -27,9 +27,10 @@ item.aradactiteChestplate.name=Aradactite Chestplate
 item.aradactiteLeggings.name=Aradactite Leggings
 item.aradactiteBoots.name=Aradactite Boots
 
-itemGroup.jamoaTab=JAMOA
+itemGroup.modTab=CommuMod
 
 entity.miner.name=Miner
+entity.superbiumGolem.name=Superbium Golem
 
 item.superCarrot.name=Super Carrot
 

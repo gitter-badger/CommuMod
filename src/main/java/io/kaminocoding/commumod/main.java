@@ -51,7 +51,7 @@ public class main
     public static proxyCommon proxy;
 
     public static final String MODID = "commumod";
-    public static final String VERSION = "1.3.0";
+    public static final String VERSION = "1.4.0";
     // Create a new creative tab
     public static CreativeTabs modTab = new CreativeTabsCommuMod("modTab");
 
@@ -61,11 +61,12 @@ public class main
 
     @Mod.EventHandler
     public void preinit(FMLPreInitializationEvent event) {
-        // some example code
+        //TODO Finish the superbium golem
         ModBlocks.loadBlocks();
         ModItems.loadItems();
         modWorld.initWorldGen();
         registerEntity(EntityMiner.class, "miner");
+//        registerEntity(EntitySuperbiumGolem.class, "superbiumGolem");
 
 
 
