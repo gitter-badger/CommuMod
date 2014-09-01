@@ -10,6 +10,7 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import io.kaminocoding.commumod.blocks.ModBlocks;
 import io.kaminocoding.commumod.entity.EntityMiner;
+import io.kaminocoding.commumod.help.Reference;
 import io.kaminocoding.commumod.help.jamoaEventHandler;
 import io.kaminocoding.commumod.items.ModItems;
 import io.kaminocoding.commumod.proxy.proxyCommon;
@@ -23,7 +24,7 @@ import net.minecraftforge.common.MinecraftForge;
 import java.util.Random;
 //TODO Add aradactite and superbium golems
 
-@Mod(modid = io.kaminocoding.commumod.help.Reference.MODID, version = io.kaminocoding.commumod.help.Reference.VERSION)
+@Mod(modid = io.kaminocoding.commumod.help.Reference.MODID, version = io.kaminocoding.commumod.help.Reference.VERSION, guiFactory = Reference.GuiFactoryClass)
 
 
 

@@ -1,16 +1,21 @@
 [
 {
-  "modid": "${MODID}",
+  "modid": "commumod",
   "name": "Community Mod",
   "description": "",
-  "version": "${version}",
+  "version": "1.4.0a",
   "mcversion": "1.7.10",
-  "url": "kaminocoding.github.io/CommuMod/",
+  "url": "",
   "updateUrl": "",
-  "authorList": ["Endergreifer153"],
+  "authorList": [
+  "Endergreifer153"
+  ],
   "credits": "",
   "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
 }
 ]

@@ -1,8 +1,8 @@
-[13:48:26] [main/INFO]: Setting user: ForgeDevName
-[13:48:28] [Client thread/INFO]: LWJGL Version: 2.9.1
-[13:48:44] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:commumod
-[13:48:46] [Sound Library Loader/INFO]: Sound engine started
-[13:48:47] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/blocks/minerShack.png
+[14:02:19] [main/INFO]: Setting user: ForgeDevName
+[14:02:22] [Client thread/INFO]: LWJGL Version: 2.9.1
+[14:02:37] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Community Mod
+[14:02:39] [Sound Library Loader/INFO]: Sound engine started
+[14:02:40] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/blocks/minerShack.png
 java.io.FileNotFoundException: commumod:textures/blocks/minerShack.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -32,8 +32,8 @@ java.io.FileNotFoundException: commumod:textures/blocks/minerShack.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_55]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_55]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[13:48:48] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[13:48:48] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/items/itemSuperbiumBlock.png
+[14:02:41] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[14:02:41] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/items/itemSuperbiumBlock.png
 java.io.FileNotFoundException: commumod:textures/items/itemSuperbiumBlock.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -63,9 +63,9 @@ java.io.FileNotFoundException: commumod:textures/items/itemSuperbiumBlock.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_55]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_55]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[13:48:48] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[13:48:49] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:commumod
-[13:48:49] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/items/itemSuperbiumBlock.png
+[14:02:41] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[14:02:41] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Community Mod
+[14:02:41] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/items/itemSuperbiumBlock.png
 java.io.FileNotFoundException: commumod:textures/items/itemSuperbiumBlock.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -98,8 +98,8 @@ java.io.FileNotFoundException: commumod:textures/items/itemSuperbiumBlock.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_55]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_55]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[13:48:49] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[13:48:49] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/blocks/minerShack.png
+[14:02:41] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[14:02:42] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/blocks/minerShack.png
 java.io.FileNotFoundException: commumod:textures/blocks/minerShack.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -132,42 +132,9 @@ java.io.FileNotFoundException: commumod:textures/blocks/minerShack.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_55]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_55]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[13:48:49] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[13:48:50] [Sound Library Loader/INFO]: Sound engine started
-[13:48:51] [Client thread/ERROR]: ########## GL ERROR ##########
-[13:48:51] [Client thread/ERROR]: @ Post startup
-[13:48:51] [Client thread/ERROR]: 1281: Invalid value
-[13:48:54] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[13:48:54] [Server thread/INFO]: Generating keypair
-[13:48:55] [Server thread/INFO]: Preparing start region for level 0
-[13:48:56] [Server thread/INFO]: Preparing spawn area: 50%
-[13:48:58] [Server thread/INFO]: Changing view distance to 12, from 10
-[13:48:58] [Server thread/INFO]: ForgeDevName[local:E:00b2ea86] logged in with entity id 198 at (379.05024912156523, 17.612844572061082, -1851.4792306815978)
-[13:48:58] [Server thread/INFO]: ForgeDevName joined the game
-[13:49:02] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 4512ms behind, skipping 90 tick(s)
-[13:49:09] [Server thread/INFO]: Saving and pausing game...
-[13:49:09] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[13:49:09] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[13:49:09] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[13:49:20] [Server thread/INFO]: Changing view distance to 4, from 12
-[13:49:22] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[13:49:24] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[13:49:31] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[13:49:34] [Server thread/INFO]: Saving and pausing game...
-[13:49:34] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[13:49:35] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[13:49:35] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[13:49:36] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:mob.superbiumgolem.throw
-[13:49:39] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:none
-[13:49:40] [Client thread/WARN]: Unable to play unknown soundEvent: minecraft:mob.superbiumgolem.throw
-[13:49:42] [Server thread/INFO]: Saving and pausing game...
-[13:49:42] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[13:49:42] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[13:49:42] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[13:49:42] [Server thread/INFO]: Stopping server
-[13:49:42] [Server thread/INFO]: Saving players
-[13:49:42] [Server thread/INFO]: Saving worlds
-[13:49:42] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[13:49:42] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[13:49:42] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[13:49:44] [Client thread/INFO]: Stopping!
+[14:02:42] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[14:02:43] [Sound Library Loader/INFO]: Sound engine started
+[14:02:44] [Client thread/ERROR]: ########## GL ERROR ##########
+[14:02:44] [Client thread/ERROR]: @ Post startup
+[14:02:44] [Client thread/ERROR]: 1281: Invalid value
+[14:02:52] [Client thread/INFO]: Stopping!
