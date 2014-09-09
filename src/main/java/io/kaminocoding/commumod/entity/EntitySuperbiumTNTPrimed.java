@@ -107,10 +107,14 @@ public class EntitySuperbiumTNTPrimed extends EntityTNTPrimed{
     {
         float f = 0.0F;
         this.worldObj.createExplosion(this, this.posX, this.posY, this.posZ, f, true);
-        for(int posX2 = (int)posX- 5; posX2 < (int)posX + 5; posX2++){
-            for(int posY2 = (int)posY - 5; posY2 < (int)posY + 0; posY2++){
-                for(int posZ2 = (int)posZ - 5; posZ2 < (int)posZ + 5; posZ2++){
-                    if(worldObj.getBlock(posX2, posY2, posZ2) != Blocks.bedrock && worldObj.getBlock(posX2, posY2, posZ2) != Blocks.end_portal_frame && worldObj.getBlock(posX2, posY2, posZ2) != Blocks.end_portal){
+        for(int posX2 = (int)posX- 5; posX2 < (int)posX + 5; posX2++)
+        {
+            for(int posY2 = (int)posY - 5; posY2 < (int)posY + 0; posY2++)
+            {
+                for(int posZ2 = (int)posZ - 5; posZ2 < (int)posZ + 5; posZ2++)
+                {
+                    if(worldObj.getBlock(posX2, posY2, posZ2) != Blocks.bedrock && worldObj.getBlock(posX2, posY2, posZ2) != Blocks.end_portal_frame && worldObj.getBlock(posX2, posY2, posZ2) != Blocks.end_portal)
+                    {
                         Block getblock = worldObj.getBlock(posX2, posY2, posZ2);
                         worldObj.setBlockToAir(posX2, posY2, posZ2);
                         Random random = new Random();

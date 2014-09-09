@@ -51,3 +51,5 @@ item.rubyHelmet.name=Ruby Helmet
 item.rubyChestplate.name=Ruby Chestplate
 item.rubyLeggings.name=Ruby Leggings
 item.rubyBoots.name=Ruby Boots
+
+tile.cobaltOre.name=Cobalt Ore

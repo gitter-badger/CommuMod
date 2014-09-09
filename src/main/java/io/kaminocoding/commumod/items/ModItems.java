@@ -71,6 +71,7 @@ public class ModItems {
     public static Item rubyLeggings;
     public static Item rubyBoots;
 
+    public static Item cobaltBoat;
 
 
     public static void loadItems()
@@ -262,6 +263,8 @@ public class ModItems {
         RegisterHelper.registerItem(rubyBoots);
         RegisterHelper.regArmorRecipe(rubyBoots,ruby,"boots");
 
+        cobaltBoat = new ItemCobaltBoat();
+        RegisterHelper.registerItem(cobaltBoat);
 
     }
 

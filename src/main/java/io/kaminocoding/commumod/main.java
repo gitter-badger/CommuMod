@@ -5,6 +5,7 @@ import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
@@ -13,7 +14,9 @@ import io.kaminocoding.commumod.config.configHandler;
 import io.kaminocoding.commumod.entity.EntityMiner;
 import io.kaminocoding.commumod.event.ModEventHandler;
 import io.kaminocoding.commumod.help.Reference;
+
 import io.kaminocoding.commumod.items.ModItems;
+
 import io.kaminocoding.commumod.proxy.proxyCommon;
 import io.kaminocoding.commumod.world.modWorld;
 import net.minecraft.creativetab.CreativeTabs;
@@ -48,20 +51,18 @@ public class main
 
     }
 
-    
+
 
     @SidedProxy(clientSide="io.kaminocoding.commumod.proxy.proxyClient", serverSide="io.kaminocoding.commumod.proxy.proxyCommon")
     public static proxyCommon proxy;
 
-    public static final String MODID = "commumod";
-    public static final String VERSION = "1.4.0";
     // Create a new creative tab
     public static CreativeTabs modTab = new CreativeTabsCommuMod("modTab");
     // Configuration file
     public static Configuration configFile;
 
 
-    @Mod.Instance(MODID)
+    @Mod.Instance(Reference.MODID)
     public static main instance;
 
 
@@ -69,6 +70,7 @@ public class main
     public void preinit(FMLPreInitializationEvent event) {
         //TODO Finish the superbium golem
         configFile = new Configuration(event.getSuggestedConfigurationFile());
+
         ModBlocks.loadBlocks();
         ModItems.loadItems();
         modWorld.initWorldGen();
@@ -84,17 +86,25 @@ public class main
     }
 
 
-
+    @Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
+
         LanguageRegistry.instance().addStringLocalization("itemGroup.modTab", "en_US", "CommuMod");
         EntityRegistry.addSpawn(EntityMiner.class, 10, 1, 5, EnumCreatureType.creature, new BiomeGenBase[]{BiomeGenBase.extremeHills});
-        MinecraftForge.EVENT_BUS.register(new ModEventHandler());
-        FMLCommonHandler.instance().bus().register(new ModEventHandler());
 
     }
 
+    //TODO Finish the displayname change easter egg
+    @Mod.EventHandler
+    public void load(FMLPostInitializationEvent event)
+    {
 
+        MinecraftForge.EVENT_BUS.register(new ModEventHandler());
+        FMLCommonHandler.instance().bus().register(new ModEventHandler());
+
+
+    }
 
 
 }

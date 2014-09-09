@@ -31,6 +31,11 @@ public class ModBlocks {
     public static Block purifier_idle;
     public static Block purifier_active;
 
+    //Waterdactite
+    public static Block cobaltOre;
+
+
+
 
     public static void loadBlocks()
     {
@@ -100,6 +105,9 @@ public class ModBlocks {
 //
 //        purifier_active = new BlockPurifier_active(false);
 //        RegisterHelper.registerBlock(purifier_active);
+
+        cobaltOre = new BlockCobaltOre(Material.rock);
+        RegisterHelper.registerBlock(cobaltOre);
 
     }
 
