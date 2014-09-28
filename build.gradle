@@ -18,7 +18,7 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.4.0a Build-46"
+version = "1.4.0a Build-63"
 group= "io.kaminocoding.commumod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "commumod"
 

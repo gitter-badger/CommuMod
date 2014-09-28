@@ -2,15 +2,21 @@ package io.kaminocoding.commumod.proxy;
 
 import com.google.common.base.Predicates;
 import com.google.common.collect.Iterators;
+import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
+import cpw.mods.fml.common.registry.GameRegistry;
+import io.kaminocoding.commumod.client.handler.ModGuiHandler;
 import io.kaminocoding.commumod.entity.EntityMiner;
+import io.kaminocoding.commumod.entity.TileEntityPurifier;
+import io.kaminocoding.commumod.help.Reference;
+import io.kaminocoding.commumod.main;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.world.biome.BiomeGenBase;
 
 /**
  * Created by noah on 5/27/14.
  */
-public abstract class proxyCommon {
+public abstract class proxyCommon{
     public void registerRenderers()
     {
 
@@ -27,6 +33,17 @@ public abstract class proxyCommon {
         EntityRegistry.addSpawn(EntityMiner.class, 10, 3, 10, EnumCreatureType.creature, BiomeGenBase.extremeHills);
         EntityRegistry.addSpawn(EntityMiner.class, 40, 3, 10, EnumCreatureType.creature, BiomeGenBase.extremeHillsEdge);
         EntityRegistry.addSpawn(EntityMiner.class, 40, 3, 10, EnumCreatureType.creature, BiomeGenBase.extremeHillsPlus);
-        EntityRegistry.addSpawn(EntityMiner.class, 30, 3, 10, EnumCreatureType.creature, BiomeGenBase.plains);
+
     }
+
+    public static void registerTileEntities()
+    {
+        GameRegistry.registerTileEntity(TileEntityPurifier.class, Reference.MODID + ":purifierTileEntity");
+    }
+
+    public void registerNetwork()
+    {
+        NetworkRegistry.INSTANCE.registerGuiHandler(main.instance, new ModGuiHandler());
+    }
+
 }

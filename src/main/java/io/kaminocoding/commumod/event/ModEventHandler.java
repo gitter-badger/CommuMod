@@ -33,20 +33,20 @@ public class ModEventHandler
     }
 
 
-//    private static String friendsUsername = configHandler.friendUserName;
-//    private static String friendsNickname = configHandler.friendNickName;
-//
-//    public static Random rand;
-//
-//    @SideOnly(Side.CLIENT)
-//    @SubscribeEvent(priority = EventPriority.HIGHEST, receiveCanceled = true)
-//    public void onPlayerUpdate(PlayerEvent.NameFormat event)
-//    {
-//        System.out.println("Registering player name format changes");
-//        if( event.username == friendsUsername)
-//        {
-//           event.displayname = friendsUsername + friendsNickname;
-//        }
-//    }
+/*    private static String friendsUsername = configHandler.friendUserName;
+    private static String friendsNickname = configHandler.friendNickName;
+
+    public static Random rand;
+
+    @SideOnly(Side.CLIENT)
+    @SubscribeEvent(priority = EventPriority.HIGHEST, receiveCanceled = true)
+    public void onPlayerUpdate(PlayerEvent.NameFormat event)
+    {
+        System.out.println("Registering player name format changes");
+        if( event.username == friendsUsername)
+        {
+           event.displayname = friendsUsername + friendsNickname;
+        }
+    }*/
 
 }

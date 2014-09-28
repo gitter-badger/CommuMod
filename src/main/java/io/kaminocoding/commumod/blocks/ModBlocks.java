@@ -109,6 +109,13 @@ public class ModBlocks {
         cobaltOre = new BlockCobaltOre(Material.rock);
         RegisterHelper.registerBlock(cobaltOre);
 
+        purifier_idle = new BlockPurifier(false).setBlockName("purifierIdle");
+        RegisterHelper.registerBlock(purifier_idle);
+
+
+
+        purifier_active = new BlockPurifier(true).setBlockName("purifierActive");
+        RegisterHelper.registerBlock(purifier_active);
     }
 
 

@@ -14,9 +14,7 @@ import io.kaminocoding.commumod.config.configHandler;
 import io.kaminocoding.commumod.entity.EntityMiner;
 import io.kaminocoding.commumod.event.ModEventHandler;
 import io.kaminocoding.commumod.help.Reference;
-
 import io.kaminocoding.commumod.items.ModItems;
-
 import io.kaminocoding.commumod.proxy.proxyCommon;
 import io.kaminocoding.commumod.world.modWorld;
 import net.minecraft.creativetab.CreativeTabs;
@@ -81,6 +79,8 @@ public class main
 
         proxy.registerRenderers();
         proxy.registerEntitySpawn();
+        proxy.registerTileEntities();
+        proxy.registerNetwork();
 
 
     }
@@ -90,12 +90,12 @@ public class main
     public void init(FMLInitializationEvent event)
     {
 
+//        NetworkRegistry.INSTANCE.registerGuiHandler(instance, proxy);
         LanguageRegistry.instance().addStringLocalization("itemGroup.modTab", "en_US", "CommuMod");
-        EntityRegistry.addSpawn(EntityMiner.class, 10, 1, 5, EnumCreatureType.creature, new BiomeGenBase[]{BiomeGenBase.extremeHills});
+        EntityRegistry.addSpawn(EntityMiner.class, 2, 1, 3, EnumCreatureType.creature, new BiomeGenBase[]{BiomeGenBase.extremeHills});
 
     }
 
-    //TODO Finish the displayname change easter egg
     @Mod.EventHandler
     public void load(FMLPostInitializationEvent event)
     {
