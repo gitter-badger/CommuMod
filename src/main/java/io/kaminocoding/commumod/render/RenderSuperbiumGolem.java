@@ -19,7 +19,7 @@ import org.lwjgl.opengl.GL12;
  * Created by noah on 8/29/14.
  */
 public class RenderSuperbiumGolem extends RenderLiving {
-    private static final ResourceLocation superbiumGolemTextures = new ResourceLocation(Reference.MODID + ":" + "textures/entity/superbium_golem.png");
+    private static final ResourceLocation superbiumGolemTextures = new ResourceLocation(Reference.MODID + ":" + "textures/entity/superbiumGolem.png");
     /** Superbium Golem's Model. */
     private final ModelSuperbiumGolem superbiumGolemModel;
     private static final String __OBFID = "CL_00001031";

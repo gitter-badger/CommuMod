@@ -31,6 +31,7 @@ itemGroup.modTab=CommuMod
 
 entity.miner.name=Miner
 entity.superbiumGolem.name=Superbium Golem
+entity.aradactiteGolem.name=Aradactite Golem
 
 item.superCarrot.name=Super Carrot
 
@@ -53,3 +54,6 @@ item.rubyLeggings.name=Ruby Leggings
 item.rubyBoots.name=Ruby Boots
 
 tile.cobaltOre.name=Cobalt Ore
+
+tile.purifierIdle.name=Purifier
+

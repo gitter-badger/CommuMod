@@ -72,6 +72,10 @@ public class ModItems {
     public static Item rubyBoots;
 
     public static Item cobaltBoat;
+    public static Item cobaltIngot;
+
+    public static Item enderDust;
+
 
 
     public static void loadItems()
@@ -265,6 +269,15 @@ public class ModItems {
 
         cobaltBoat = new ItemCobaltBoat();
         RegisterHelper.registerItem(cobaltBoat);
+
+        cobaltIngot = new ItemCobaltIngot();
+        RegisterHelper.registerItem(cobaltIngot);
+
+        enderDust = new ItemEnderDust();
+        RegisterHelper.registerItem(enderDust);
+
+
+
 
     }
 

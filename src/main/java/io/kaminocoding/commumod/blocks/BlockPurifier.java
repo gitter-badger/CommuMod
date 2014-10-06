@@ -1,6 +1,5 @@
 package io.kaminocoding.commumod.blocks;
 
-import cpw.mods.fml.common.FMLLog;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import io.kaminocoding.commumod.entity.TileEntityPurifier;
@@ -46,11 +45,11 @@ public class BlockPurifier extends BlockContainer
     }
 
     @SideOnly(Side.CLIENT)
-    public void registerIcons(IIconRegister register)
+    public void registerBlockIcons(IIconRegister register)
     {
-        this.blockIcon = register.registerIcon(Reference.MODID + ":purifier_side");
-        this.front = register.registerIcon(this.isIsBurning ? Reference.MODID + ":purifier_frontActive" : Reference.MODID + ":purifier_frontIdle");
-        this.top = register.registerIcon(Reference.MODID + ":purifier_top");
+        this.blockIcon = register.registerIcon(Reference.MODID + ":purifierSide");
+        this.front = register.registerIcon(this.isIsBurning ? Reference.MODID+":purifierFront_on" : Reference.MODID+":purifierFront_off");
+        this.top = register.registerIcon(Reference.MODID + ":purifierTop");
     }
 
     public IIcon getIcon(int side, int meta)
@@ -59,7 +58,7 @@ public class BlockPurifier extends BlockContainer
         {
             return top;
         }
-        else if (side == 3)
+        else if (side == 5)
         {
             return front;
         }
@@ -71,7 +70,7 @@ public class BlockPurifier extends BlockContainer
 
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int par6, float par7, float par8, float par9)
     {
-        FMLLog.info("Attempting to open GUI for purifier");
+
         player.openGui(main.instance, 0, world, x, y, z);
         return true;
     }

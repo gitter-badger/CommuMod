@@ -16,7 +16,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.ChunkCoordinates;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.MathHelper;
 import net.minecraft.village.Village;
@@ -31,7 +30,7 @@ public class EntitySuperbiumGolem extends EntityGolem {
     Village villageObj;
     private int attackTimer;
     private int holdRoseTick;
-    private static final String __OBFID = "CL_00001652";
+
 
     public EntitySuperbiumGolem(World p_i1694_1_)
     {
@@ -40,15 +39,15 @@ public class EntitySuperbiumGolem extends EntityGolem {
         this.getNavigator().setAvoidsWater(true);
         this.tasks.addTask(1, new EntityAIAttackOnCollide(this, 1.0D, true));
         this.tasks.addTask(2, new EntityAIMoveTowardsTarget(this, 0.9D, 32.0F));
-        this.tasks.addTask(3, new EntityAIMoveThroughVillage(this, 0.6D, true));
-        this.tasks.addTask(4, new EntityAIMoveTowardsRestriction(this, 1.0D));
+//        this.tasks.addTask(3, new EntityAIMoveThroughVillage(this, 0.6D, true));
+        this.tasks.addTask(3, new EntityAIMoveTowardsRestriction(this, 1.0D));
 //        this.tasks.addTask(5, new EntityAILookAtVillager(this));
-        this.tasks.addTask(6, new EntityAIWander(this, 0.6D));
-        this.tasks.addTask(7, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
-        this.tasks.addTask(8, new EntityAILookIdle(this));
+        this.tasks.addTask(4, new EntityAIWander(this, 0.6D));
+        this.tasks.addTask(5, new EntityAIWatchClosest(this, EntityPlayer.class, 6.0F));
+        this.tasks.addTask(6, new EntityAILookIdle(this));
 //        this.targetTasks.addTask(1, new EntityAIDefendVillage(this));
-        this.targetTasks.addTask(2, new EntityAIHurtByTarget(this, false));
-        this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityLiving.class, 0, false, true, IMob.mobSelector));
+        this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, false));
+        this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityLiving.class, 0, false, true, IMob.mobSelector));
     }
 
     protected void entityInit()
@@ -70,7 +69,7 @@ public class EntitySuperbiumGolem extends EntityGolem {
      */
     protected void updateAITick()
     {
-        if (--this.homeCheckTimer <= 0)
+        /*if (--this.homeCheckTimer <= 0)
         {
             this.homeCheckTimer = 70 + this.rand.nextInt(50);
             this.villageObj = this.worldObj.villageCollectionObj.findNearestVillage(MathHelper.floor_double(this.posX), MathHelper.floor_double(this.posY), MathHelper.floor_double(this.posZ), 32);
@@ -84,7 +83,7 @@ public class EntitySuperbiumGolem extends EntityGolem {
                 ChunkCoordinates chunkcoordinates = this.villageObj.getCenter();
                 this.setHomeArea(chunkcoordinates.posX, chunkcoordinates.posY, chunkcoordinates.posZ, (int)((float)this.villageObj.getVillageRadius() * 0.6F));
             }
-        }
+        }*/
 
         super.updateAITick();
     }
@@ -92,8 +91,8 @@ public class EntitySuperbiumGolem extends EntityGolem {
     protected void applyEntityAttributes()
     {
         super.applyEntityAttributes();
-        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(100.0D);
-        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.25D);
+        this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(50.0D);
+        this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.40D);
     }
 
     /**
@@ -183,7 +182,7 @@ public class EntitySuperbiumGolem extends EntityGolem {
             p_70652_1_.motionY += 0.4000000059604645D;
         }
 
-        this.playSound("mob.superbiumgolem.throw", 1.0F, 1.0F);
+//        this.playSound("mob.superbiumgolem.throw", 1.0F, 1.0F);
         return flag;
     }
 
@@ -193,7 +192,7 @@ public class EntitySuperbiumGolem extends EntityGolem {
         if (p_70103_1_ == 4)
         {
             this.attackTimer = 10;
-            this.playSound("mob.superbiumgolem.throw", 1.0F, 1.0F);
+//            this.playSound("mob.superbiumgolem.throw", 1.0F, 1.0F);
         }
         else if (p_70103_1_ == 11)
         {
@@ -225,22 +224,22 @@ public class EntitySuperbiumGolem extends EntityGolem {
     /**
      * Returns the sound this mob makes when it is hurt.
      */
-    protected String getHurtSound()
-    {
-        return "mob.irongolem.hit";
-    }
+//    protected String getHurtSound()
+//    {
+//        return "mob.irongolem.hit";
+//    }
 
     /**
      * Returns the sound this mob makes on death.
      */
-    protected String getDeathSound()
-    {
-        return "mob.irongolem.death";
-    }
+//    protected String getDeathSound()
+//    {
+//        return "mob.irongolem.death";
+//    }
 
     protected void func_145780_a(int p_145780_1_, int p_145780_2_, int p_145780_3_, Block p_145780_4_)
     {
-        this.playSound("mob.irongolem.walk", 1.0F, 1.0F);
+//        this.playSound("mob.irongolem.walk", 1.0F, 1.0F);
     }
 
     /**

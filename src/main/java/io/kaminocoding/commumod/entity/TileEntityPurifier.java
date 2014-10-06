@@ -4,6 +4,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import io.kaminocoding.commumod.blocks.BlockPurifier;
+import io.kaminocoding.commumod.help.PurifierRecipes;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
@@ -11,7 +12,6 @@ import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.inventory.ISidedInventory;
 import net.minecraft.item.*;
-import net.minecraft.item.crafting.FurnaceRecipes;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.nbt.NBTTagList;
 import net.minecraft.tileentity.TileEntity;
@@ -59,6 +59,8 @@ public class TileEntityPurifier extends TileEntity implements ISidedInventory
     public int getSizeInventory() {
         return this.furnaceItemStacks.length;
     }
+
+
 
     @Override
     public ItemStack getStackInSlot(int slot) {
@@ -121,7 +123,7 @@ public class TileEntityPurifier extends TileEntity implements ISidedInventory
 
     @Override
     public String getInventoryName() {
-        return this.hasCustomInventoryName() ? this.furnaceName : "containerPurifier";
+        return this.hasCustomInventoryName() ? this.furnaceName : "Purifier";
     }
 
     @Override
@@ -298,12 +300,19 @@ public class TileEntityPurifier extends TileEntity implements ISidedInventory
         }
         else
         {
-            ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
+
+            /*ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
             if (itemstack == null) return false;
             if (this.furnaceItemStacks[2] == null) return true;
             if (!this.furnaceItemStacks[2].isItemEqual(itemstack)) return false;
-            int result = furnaceItemStacks[2].stackSize + itemstack.stackSize;
-            return result <= getInventoryStackLimit() && result <= this.furnaceItemStacks[2].getMaxStackSize(); //Forge BugFix: Make it respect stack sizes properly.
+            int result = furnaceItemStacks[2].stackSize + itemstack.stackSize;*/
+
+            ItemStack itemStack = PurifierRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
+            if(itemStack == null) return false;
+            if(this.furnaceItemStacks[2] == null) return true;
+            if(!this.furnaceItemStacks[2].isItemEqual(itemStack)) return false;
+
+            return /*result <= getInventoryStackLimit() && result <= this.furnaceItemStacks[2].getMaxStackSize() ||*/ furnaceItemStacks[2].stackSize + itemStack.stackSize <= getInventoryStackLimit() && furnaceItemStacks[2].stackSize + itemStack.stackSize <= this.furnaceItemStacks[2].getMaxStackSize(); //Forge BugFix: Make it respect stack sizes properly.
         }
     }
 
@@ -311,7 +320,7 @@ public class TileEntityPurifier extends TileEntity implements ISidedInventory
     {
         if (this.canSmelt())
         {
-            ItemStack itemstack = FurnaceRecipes.smelting().getSmeltingResult(this.furnaceItemStacks[0]);
+            ItemStack itemstack = PurifierRecipes.smelting().getSmeltingResult(furnaceItemStacks[0]);
 
             if (this.furnaceItemStacks[2] == null)
             {

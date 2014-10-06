@@ -11,7 +11,9 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import io.kaminocoding.commumod.blocks.ModBlocks;
 import io.kaminocoding.commumod.config.configHandler;
+import io.kaminocoding.commumod.entity.EntityAradactiteGolem;
 import io.kaminocoding.commumod.entity.EntityMiner;
+import io.kaminocoding.commumod.entity.EntitySuperbiumGolem;
 import io.kaminocoding.commumod.event.ModEventHandler;
 import io.kaminocoding.commumod.help.Reference;
 import io.kaminocoding.commumod.items.ModItems;
@@ -73,7 +75,8 @@ public class main
         ModItems.loadItems();
         modWorld.initWorldGen();
         registerEntity(EntityMiner.class, "miner");
-//        registerEntity(EntitySuperbiumGolem.class, "superbiumGolem");
+        registerEntity(EntitySuperbiumGolem.class, "superbiumGolem");
+        registerEntity(EntityAradactiteGolem.class, "aradactiteGolem");
         configHandler.init(configFile.getConfigFile());
 
 
@@ -94,6 +97,7 @@ public class main
         LanguageRegistry.instance().addStringLocalization("itemGroup.modTab", "en_US", "CommuMod");
         EntityRegistry.addSpawn(EntityMiner.class, 2, 1, 3, EnumCreatureType.creature, new BiomeGenBase[]{BiomeGenBase.extremeHills});
 
+
     }
 
     @Mod.EventHandler
@@ -102,7 +106,6 @@ public class main
 
         MinecraftForge.EVENT_BUS.register(new ModEventHandler());
         FMLCommonHandler.instance().bus().register(new ModEventHandler());
-
 
     }
 

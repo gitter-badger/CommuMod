@@ -3,10 +3,12 @@ package io.kaminocoding.commumod.blocks;
 import cpw.mods.fml.common.registry.GameRegistry;
 import io.kaminocoding.commumod.help.RegisterHelper;
 import io.kaminocoding.commumod.items.ModItems;
+import io.kaminocoding.commumod.main;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.Fluid;
 
 /**
  * Created by noah on 5/14/14.
@@ -34,7 +36,10 @@ public class ModBlocks {
     //Waterdactite
     public static Block cobaltOre;
 
-
+    /**************************************************************************************
+    ************************Water/Liquid blocks********************************************/
+    public static Fluid pureWater;
+    private static Block pureWaterBlock;
 
 
     public static void loadBlocks()
@@ -109,13 +114,17 @@ public class ModBlocks {
         cobaltOre = new BlockCobaltOre(Material.rock);
         RegisterHelper.registerBlock(cobaltOre);
 
-        purifier_idle = new BlockPurifier(false).setBlockName("purifierIdle");
+        purifier_idle = new BlockPurifier(false).setBlockName("purifierIdle").setCreativeTab(main.modTab);
         RegisterHelper.registerBlock(purifier_idle);
 
 
 
         purifier_active = new BlockPurifier(true).setBlockName("purifierActive");
         RegisterHelper.registerBlock(purifier_active);
+
+
+
+
     }
 
 
