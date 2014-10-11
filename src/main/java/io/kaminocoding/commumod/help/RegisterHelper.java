@@ -139,7 +139,7 @@ public class RegisterHelper {
 
     public static void addPurifying(Item input, ItemStack output, float xp)
     {
-
+        PurifierRecipes.smelting().addRecipe(input, output, xp);
     }
 
 }

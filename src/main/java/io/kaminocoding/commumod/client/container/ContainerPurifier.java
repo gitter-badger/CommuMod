@@ -3,6 +3,7 @@ package io.kaminocoding.commumod.client.container;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import io.kaminocoding.commumod.entity.TileEntityPurifier;
+import io.kaminocoding.commumod.help.PurifierRecipes;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;
@@ -10,7 +11,6 @@ import net.minecraft.inventory.ICrafting;
 import net.minecraft.inventory.Slot;
 import net.minecraft.inventory.SlotFurnace;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.crafting.FurnaceRecipes;
 
 /**
  * Created by noah on 9/23/14.
@@ -121,7 +121,7 @@ public class ContainerPurifier extends Container{
 
             }else if(par2 != 1 && par2 != 0)
             {
-                if(FurnaceRecipes.smelting().getSmeltingResult(itemStack1) != null)
+                if(PurifierRecipes.smelting().getSmeltingResult(itemStack1) != null)
                 {
                     if(!this.mergeItemStack(itemStack1,0,1,false)){
                         return null;

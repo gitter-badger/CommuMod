@@ -2,6 +2,7 @@ package io.kaminocoding.commumod.entity;
 
 
 import io.kaminocoding.commumod.food_items.foodItems;
+import io.kaminocoding.commumod.items.ModItems;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.IEntityLivingData;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -11,6 +12,7 @@ import net.minecraft.entity.passive.EntityVillager;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.world.EnumDifficulty;
 import net.minecraft.world.World;
 
@@ -109,6 +111,12 @@ public class EntityMiner extends EntityMob {
     protected String getLivingSound()
     {
         return "mob.villager.idle";
+    }
+
+
+    protected void addRandomArmor()
+    {
+        this.setCurrentItemOrArmor(0, new ItemStack(ModItems.aradactiteAxe));
     }
 
 
