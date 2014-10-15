@@ -1,9 +1,12 @@
 package io.kaminocoding.commumod.items;
 
 
+import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import io.kaminocoding.commumod.blocks.ModBlocks;
+import io.kaminocoding.commumod.entity.EntityCobaltBoat;
 import io.kaminocoding.commumod.help.RegisterHelper;
+import io.kaminocoding.commumod.main;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
@@ -75,6 +78,10 @@ public class ModItems {
     public static Item cobaltIngot;
 
     public static Item enderDust;
+
+    public static Item pureWaterBucket;
+
+    public static Item appleBlock;
 
 
 
@@ -267,14 +274,17 @@ public class ModItems {
         RegisterHelper.registerItem(rubyBoots);
         RegisterHelper.regArmorRecipe(rubyBoots,ruby,"boots");
 
-        cobaltBoat = new ItemCobaltBoat();
+        cobaltBoat = new ItemCobaltBoat().setUnlocalizedName("cobaltBoat");
         RegisterHelper.registerItem(cobaltBoat);
+        EntityRegistry.registerModEntity(EntityCobaltBoat.class, "cobaltBoat", EntityRegistry.findGlobalUniqueEntityId(), main.instance, 80, 3, false);
 
         cobaltIngot = new ItemCobaltIngot();
         RegisterHelper.registerItem(cobaltIngot);
 
         enderDust = new ItemEnderDust();
         RegisterHelper.registerItem(enderDust);
+
+
 
 
 

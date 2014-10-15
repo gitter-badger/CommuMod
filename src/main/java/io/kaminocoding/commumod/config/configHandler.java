@@ -10,7 +10,7 @@ import java.io.File;
 /**
  * Created by noah on 8/30/14.
  */
-public class configHandler
+public class ConfigHandler
 {
     public static Configuration configuration;
 //    public static Boolean testValue = false;

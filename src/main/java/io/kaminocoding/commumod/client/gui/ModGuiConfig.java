@@ -1,7 +1,7 @@
 package io.kaminocoding.commumod.client.gui;
 
 import cpw.mods.fml.client.config.GuiConfig;
-import io.kaminocoding.commumod.config.configHandler;
+import io.kaminocoding.commumod.config.ConfigHandler;
 import io.kaminocoding.commumod.help.Reference;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;
@@ -17,10 +17,10 @@ public class ModGuiConfig extends GuiConfig
     public ModGuiConfig(GuiScreen parentScreen)
     {
         super(parentScreen,
-                new ConfigElement(configHandler.configuration.getCategory(Configuration.CATEGORY_GENERAL)).getChildElements(),
+                new ConfigElement(ConfigHandler.configuration.getCategory(Configuration.CATEGORY_GENERAL)).getChildElements(),
                 Reference.MODID,
                 false,
                 false,
-                GuiConfig.getAbridgedConfigPath(configHandler.configuration.toString()));
+                GuiConfig.getAbridgedConfigPath(ConfigHandler.configuration.toString()));
     }
 }

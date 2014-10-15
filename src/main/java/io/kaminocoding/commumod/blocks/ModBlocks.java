@@ -8,7 +8,6 @@ import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fluids.Fluid;
 
 /**
  * Created by noah on 5/14/14.
@@ -36,10 +35,11 @@ public class ModBlocks {
     //Waterdactite
     public static Block cobaltOre;
 
+    public static Block appleBlock;
+
     /**************************************************************************************
     ************************Water/Liquid blocks********************************************/
-    public static Fluid pureWater;
-    private static Block pureWaterBlock;
+    public static Block pureWaterBlock;
 
 
     public static void loadBlocks()
@@ -105,11 +105,7 @@ public class ModBlocks {
                 'x', ModItems.ruby
         });
 
-//        purifier_idle = new BlockPurifier_idle(false);
-//        RegisterHelper.registerBlock(purifier_idle);
-//
-//        purifier_active = new BlockPurifier_active(false);
-//        RegisterHelper.registerBlock(purifier_active);
+
 
         cobaltOre = new BlockCobaltOre(Material.rock);
         RegisterHelper.registerBlock(cobaltOre);
@@ -122,7 +118,8 @@ public class ModBlocks {
         purifier_active = new BlockPurifier(true).setBlockName("purifierActive");
         RegisterHelper.registerBlock(purifier_active);
 
-
+        appleBlock = new BlockOfApple();
+        RegisterHelper.registerBlock(appleBlock);
 
 
     }

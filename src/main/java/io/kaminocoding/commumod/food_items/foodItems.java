@@ -15,6 +15,8 @@ public class foodItems {
 
     public static Item superCarrot = new FoodSuperCarrot(5, 5, false);
 
+    public static Item appleBlock = new ItemAppleBlock(8, 8, false);
+
     public static void loadFood()
     {
         RegisterHelper.registerItem(superCarrot);

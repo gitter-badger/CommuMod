@@ -2,6 +2,7 @@ package io.kaminocoding.commumod.entity;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import io.kaminocoding.commumod.items.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
@@ -22,16 +23,7 @@ import java.util.List;
 /**
  * Created by noah on 10/11/14.
  */
-public class EntityCobaltBoat extends EntityBoat {
-
-    public EntityCobaltBoat(World world) {
-        super(world);
-        this.isBoatEmpty = true;
-        this.speedMultiplier = 0.07D;
-        this.preventEntitySpawning = true;
-        this.setSize(1.5F, 0.6F);
-        this.yOffset = this.height / 2.0F;
-    }
+public class EntityCobaltBoat extends Entity {
 
     /** true if no player in boat */
     private boolean isBoatEmpty;
@@ -48,9 +40,16 @@ public class EntityCobaltBoat extends EntityBoat {
     private double velocityY;
     @SideOnly(Side.CLIENT)
     private double velocityZ;
-    private static final String __OBFID = "CL_00001667";
 
-
+    public EntityCobaltBoat(World p_i1704_1_)
+    {
+        super(p_i1704_1_);
+        this.isBoatEmpty = true;
+        this.speedMultiplier = 0.07D;
+        this.preventEntitySpawning = true;
+        this.setSize(1.5F, 0.6F);
+        this.yOffset = this.height / 2.0F;
+    }
 
     /**
      * returns if this entity triggers Block.onEntityWalking on the blocks they walk on. used for spiders and wolves to
@@ -139,7 +138,7 @@ public class EntityCobaltBoat extends EntityBoat {
 
                 if (!flag)
                 {
-                    this.func_145778_a(Items.boat, 1, 0.0F);
+                    this.func_145778_a(ModItems.cobaltBoat, 1, 0.0F);
                 }
 
                 this.setDead();
@@ -296,7 +295,7 @@ public class EntityCobaltBoat extends EntityBoat {
                 d2 = this.posX + (this.boatX - this.posX) / (double)this.boatPosRotationIncrements;
                 d4 = this.posY + (this.boatY - this.posY) / (double)this.boatPosRotationIncrements;
                 d11 = this.posZ + (this.boatZ - this.posZ) / (double)this.boatPosRotationIncrements;
-                d12 = MathHelper.wrapAngleTo180_double(this.boatYaw - (double) this.rotationYaw);
+                d12 = MathHelper.wrapAngleTo180_double(this.boatYaw - (double)this.rotationYaw);
                 this.rotationYaw = (float)((double)this.rotationYaw + d12 / (double)this.boatPosRotationIncrements);
                 this.rotationPitch = (float)((double)this.rotationPitch + (this.boatPitch - (double)this.rotationPitch) / (double)this.boatPosRotationIncrements);
                 --this.boatPosRotationIncrements;
@@ -410,29 +409,9 @@ public class EntityCobaltBoat extends EntityBoat {
 
             this.moveEntity(this.motionX, this.motionY, this.motionZ);
 
-            if (this.isCollidedHorizontally && d10 > 0.2D)
-            {
-                if (!this.worldObj.isRemote && !this.isDead)
-                {
-                    this.setDead();
-
-                    for (l = 0; l < 3; ++l)
-                    {
-                        this.func_145778_a(Item.getItemFromBlock(Blocks.planks), 1, 0.0F);
-                    }
-
-                    for (l = 0; l < 2; ++l)
-                    {
-                        this.func_145778_a(Items.stick, 1, 0.0F);
-                    }
-                }
-            }
-            else
-            {
-                this.motionX *= 0.9900000095367432D;
-                this.motionY *= 0.949999988079071D;
-                this.motionZ *= 0.9900000095367432D;
-            }
+            this.motionX *= 0.9900000095367432D;
+            this.motionY *= 0.949999988079071D;
+            this.motionZ *= 0.9900000095367432D;
 
             this.rotationPitch = 0.0F;
             d4 = (double)this.rotationYaw;
@@ -461,7 +440,7 @@ public class EntityCobaltBoat extends EntityBoat {
 
             if (!this.worldObj.isRemote)
             {
-                List list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(0.20000000298023224D, 0.0D, 0.20000000298023224D));
+                List<?> list = this.worldObj.getEntitiesWithinAABBExcludingEntity(this, this.boundingBox.expand(0.20000000298023224D, 0.0D, 0.20000000298023224D));
 
                 if (list != null && !list.isEmpty())
                 {
@@ -469,7 +448,7 @@ public class EntityCobaltBoat extends EntityBoat {
                     {
                         Entity entity = (Entity)list.get(k1);
 
-                        if (entity != this.riddenByEntity && entity.canBePushed() && entity instanceof EntityBoat)
+                        if (entity != this.riddenByEntity && entity.canBePushed() && (entity instanceof EntityBoat || entity instanceof EntityCobaltBoat))
                         {
                             entity.applyEntityCollision(this);
                         }

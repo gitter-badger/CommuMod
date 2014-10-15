@@ -1,11 +1,11 @@
 package io.kaminocoding.commumod.render;
 
+import io.kaminocoding.commumod.entity.EntityCobaltBoat;
 import io.kaminocoding.commumod.help.Reference;
+import io.kaminocoding.commumod.model.ModelCobaltBoat;
 import net.minecraft.client.model.ModelBase;
-import net.minecraft.client.model.ModelBoat;
-import net.minecraft.client.renderer.entity.RenderBoat;
+import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.item.EntityBoat;
 import net.minecraft.util.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import org.lwjgl.opengl.GL11;
@@ -13,15 +13,16 @@ import org.lwjgl.opengl.GL11;
 /**
  * Created by noah on 10/11/14.
  */
-public class RenderCobaltBoat extends RenderBoat {
-    private static final ResourceLocation boatTextures = new ResourceLocation(Reference.MODID + ":" + "textures/model/cobaltBoat");
+
+public class RenderCobaltBoat extends Render {
+    private static final ResourceLocation boatTextures = new ResourceLocation(Reference.MODID + ":/models/cobaltBoat.png");
     /** instance of ModelBoat for rendering */
     protected ModelBase modelBoat;
 
     public RenderCobaltBoat()
     {
         this.shadowSize = 0.5F;
-        this.modelBoat = new ModelBoat();
+        this.modelBoat = new ModelCobaltBoat();
     }
 
     /**
@@ -30,7 +31,7 @@ public class RenderCobaltBoat extends RenderBoat {
      * (Render<T extends Entity) and this method has signature public void func_76986_a(T entity, double d, double d1,
      * double d2, float f, float f1). But JAD is pre 1.5 so doesn't do that.
      */
-    public void doRender(EntityBoat p_76986_1_, double p_76986_2_, double p_76986_4_, double p_76986_6_, float p_76986_8_, float p_76986_9_)
+    public void doRender(EntityCobaltBoat p_76986_1_, double p_76986_2_, double p_76986_4_, double p_76986_6_, float p_76986_8_, float p_76986_9_)
     {
         GL11.glPushMatrix();
         GL11.glTranslatef((float)p_76986_2_, (float)p_76986_4_, (float)p_76986_6_);
@@ -60,7 +61,7 @@ public class RenderCobaltBoat extends RenderBoat {
     /**
      * Returns the location of an entity's texture. Doesn't seem to be called unless you call Render.bindEntityTexture.
      */
-    protected ResourceLocation getEntityTexture(EntityBoat p_110775_1_)
+    protected ResourceLocation getEntityTexture(EntityCobaltBoat p_110775_1_)
     {
         return boatTextures;
     }
@@ -70,7 +71,7 @@ public class RenderCobaltBoat extends RenderBoat {
      */
     protected ResourceLocation getEntityTexture(Entity p_110775_1_)
     {
-        return this.getEntityTexture((EntityBoat)p_110775_1_);
+        return this.getEntityTexture((EntityCobaltBoat)p_110775_1_);
     }
 
     /**
@@ -79,8 +80,8 @@ public class RenderCobaltBoat extends RenderBoat {
      * (Render<T extends Entity) and this method has signature public void func_76986_a(T entity, double d, double d1,
      * double d2, float f, float f1). But JAD is pre 1.5 so doesn't do that.
      */
-    public void doRender(Entity p_76986_1_, double p_76986_2_, double p_76986_4_, double p_76986_6_, float p_76986_8_, float p_76986_9_)
+    public void doRender(Entity entity, double p_76986_2_, double p_76986_4_, double p_76986_6_, float p_76986_8_, float p_76986_9_)
     {
-        this.doRender((EntityBoat)p_76986_1_, p_76986_2_, p_76986_4_, p_76986_6_, p_76986_8_, p_76986_9_);
+        this.doRender((EntityCobaltBoat)entity, p_76986_2_, p_76986_4_, p_76986_6_, p_76986_8_, p_76986_9_);
     }
 }

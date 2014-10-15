@@ -17,8 +17,17 @@ import net.minecraft.world.biome.BiomeGenBase;
  * Created by noah on 5/27/14.
  */
 public abstract class proxyCommon{
+
+
+
     public void registerRenderers()
     {
+
+    }
+
+
+
+    public void preinit(){
 
     }
 

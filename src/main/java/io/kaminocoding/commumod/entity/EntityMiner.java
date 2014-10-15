@@ -28,6 +28,7 @@ public class EntityMiner extends EntityMob {
         this.tasks.addTask(4, new EntityAIWander(this, 1.0D));
         this.tasks.addTask(5, new EntityAIAttackOnCollide(this, 1.0D, true));
 
+
         this.addRandomArmor();
         this.setSprinting(false);
 
