@@ -18,8 +18,8 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.4.0a Build-127"
-group= "io.kaminocoding.commumod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+version = "1.4.0a Build-135"
+group= "io.cyb3rwarri0r8.commumod" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "commumod"
 
 minecraft {

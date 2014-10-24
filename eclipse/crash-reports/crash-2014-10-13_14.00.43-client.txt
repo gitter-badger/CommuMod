@@ -4,8 +4,8 @@
 Time: 10/13/14 2:00 PM
 Description: Rendering entity in world
 
-java.lang.ClassCastException: io.kaminocoding.commumod.entity.EntityCobaltBoat cannot be cast to net.minecraft.entity.item.EntityBoat
-	at io.kaminocoding.commumod.render.RenderCobaltBoat.doRender(RenderCobaltBoat.java:85)
+java.lang.ClassCastException: io.cyb3rwarri0r8.commumod.entity.EntityCobaltBoat cannot be cast to net.minecraft.entity.item.EntityBoat
+	at io.cyb3rwarri0r8.commumod.render.RenderCobaltBoat.doRender(RenderCobaltBoat.java:85)
 	at net.minecraft.client.renderer.entity.RenderManager.func_147939_a(RenderManager.java:300)
 	at net.minecraft.client.renderer.entity.RenderManager.renderEntityStatic(RenderManager.java:278)
 	at net.minecraft.client.renderer.entity.RenderManager.renderEntitySimple(RenderManager.java:251)
@@ -40,11 +40,11 @@ A detailed walkthrough of the error, its code path and all known details is as f
 
 -- Head --
 Stacktrace:
-	at io.kaminocoding.commumod.render.RenderCobaltBoat.doRender(RenderCobaltBoat.java:85)
+	at io.cyb3rwarri0r8.commumod.render.RenderCobaltBoat.doRender(RenderCobaltBoat.java:85)
 
 -- Entity being rendered --
 Details:
-	Entity Type: commumod.cobaltBoat (io.kaminocoding.commumod.entity.EntityCobaltBoat)
+	Entity Type: commumod.cobaltBoat (io.cyb3rwarri0r8.commumod.entity.EntityCobaltBoat)
 	Entity ID: 240
 	Entity Name: entity.commumod.cobaltBoat.name
 	Entity's Exact location: -107.50, 63.39, 401.50
@@ -53,7 +53,7 @@ Details:
 
 -- Renderer details --
 Details:
-	Assigned renderer: io.kaminocoding.commumod.render.RenderCobaltBoat@1a001875
+	Assigned renderer: io.cyb3rwarri0r8.commumod.render.RenderCobaltBoat@1a001875
 	Location: -2.33,-1.36,-0.31 - World: (-3,-2,-1), Chunk: (at 13,-1,15 in -1,-1; contains blocks -16,0,-16 to -1,255,-1), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,0,-512 to -1,255,-1)
 	Rotation: 0.0
 	Delta: 0.2718668

@@ -5,8 +5,8 @@ Time: 10/5/14 10:05 PM
 Description: Ticking block entity
 
 java.lang.NullPointerException: Ticking block entity
-	at io.kaminocoding.commumod.entity.TileEntityPurifier.smeltItem(TileEntityPurifier.java:328)
-	at io.kaminocoding.commumod.entity.TileEntityPurifier.updateEntity(TileEntityPurifier.java:273)
+	at io.cyb3rwarri0r8.commumod.entity.TileEntityPurifier.smeltItem(TileEntityPurifier.java:328)
+	at io.cyb3rwarri0r8.commumod.entity.TileEntityPurifier.updateEntity(TileEntityPurifier.java:273)
 	at net.minecraft.world.World.updateEntities(World.java:2115)
 	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:529)
 	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:713)
@@ -21,16 +21,16 @@ A detailed walkthrough of the error, its code path and all known details is as f
 
 -- Head --
 Stacktrace:
-	at io.kaminocoding.commumod.entity.TileEntityPurifier.smeltItem(TileEntityPurifier.java:328)
-	at io.kaminocoding.commumod.entity.TileEntityPurifier.updateEntity(TileEntityPurifier.java:273)
+	at io.cyb3rwarri0r8.commumod.entity.TileEntityPurifier.smeltItem(TileEntityPurifier.java:328)
+	at io.cyb3rwarri0r8.commumod.entity.TileEntityPurifier.updateEntity(TileEntityPurifier.java:273)
 
 -- Block entity being ticked --
 Details:
-	Name: commumod:purifierTileEntity // io.kaminocoding.commumod.entity.TileEntityPurifier
-	Block type: ID #182 (tile.purifierActive // io.kaminocoding.commumod.blocks.BlockPurifier)
+	Name: commumod:purifierTileEntity // io.cyb3rwarri0r8.commumod.entity.TileEntityPurifier
+	Block type: ID #182 (tile.purifierActive // io.cyb3rwarri0r8.commumod.blocks.BlockPurifier)
 	Block data value: 5 / 0x5 / 0b0101
 	Block location: World: (-128,64,364), Chunk: (at 0,4,12 in -8,22; contains blocks -128,0,352 to -113,255,367), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,0,0 to -1,255,511)
-	Actual block type: ID #182 (tile.purifierActive // io.kaminocoding.commumod.blocks.BlockPurifier)
+	Actual block type: ID #182 (tile.purifierActive // io.cyb3rwarri0r8.commumod.blocks.BlockPurifier)
 	Actual block data value: 5 / 0x5 / 0b0101
 Stacktrace:
 	at net.minecraft.world.World.updateEntities(World.java:2115)

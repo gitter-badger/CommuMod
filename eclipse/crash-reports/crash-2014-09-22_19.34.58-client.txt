@@ -8,7 +8,7 @@ java.lang.NullPointerException: Unexpected error
 	at cpw.mods.fml.common.network.NetworkRegistry.getLocalGuiContainer(NetworkRegistry.java:263)
 	at cpw.mods.fml.common.network.internal.FMLNetworkHandler.openGui(FMLNetworkHandler.java:93)
 	at net.minecraft.entity.player.EntityPlayer.openGui(EntityPlayer.java:2514)
-	at io.kaminocoding.commumod.blocks.BlockPurifier.onBlockActivated(BlockPurifier.java:77)
+	at io.cyb3rwarri0r8.commumod.blocks.BlockPurifier.onBlockActivated(BlockPurifier.java:77)
 	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:380)
 	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1529)
 	at net.minecraft.client.Minecraft.runTick(Minecraft.java:2044)
@@ -38,7 +38,7 @@ Stacktrace:
 	at cpw.mods.fml.common.network.NetworkRegistry.getLocalGuiContainer(NetworkRegistry.java:263)
 	at cpw.mods.fml.common.network.internal.FMLNetworkHandler.openGui(FMLNetworkHandler.java:93)
 	at net.minecraft.entity.player.EntityPlayer.openGui(EntityPlayer.java:2514)
-	at io.kaminocoding.commumod.blocks.BlockPurifier.onBlockActivated(BlockPurifier.java:77)
+	at io.cyb3rwarri0r8.commumod.blocks.BlockPurifier.onBlockActivated(BlockPurifier.java:77)
 	at net.minecraft.client.multiplayer.PlayerControllerMP.onPlayerRightClick(PlayerControllerMP.java:380)
 	at net.minecraft.client.Minecraft.func_147121_ag(Minecraft.java:1529)
 
