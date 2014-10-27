@@ -39,6 +39,9 @@ tile.superbiumTNT.name=Superbium TNT
 entity.superbiumTNT.name=Superbium TNT
 tile.superbiumTorch.name=Superbium Torch
 
+tile.hydrogenTNT.name=Hydrogen TNT
+tile.appleBlock.name=Apple Block
+
 tile.minerShack.name=Instant Miner Shack
 
 item.rubyPickaxe.name=Ruby Pickaxe

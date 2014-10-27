@@ -12,6 +12,8 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.fluids.FluidContainerRegistry;
+import net.minecraftforge.fluids.FluidRegistry;
 
 /**
  * Created by noah on 5/14/14.
@@ -285,7 +287,9 @@ public class ModItems {
         RegisterHelper.registerItem(enderDust);
 
 
-
+        pureWaterBucket = new ItemPureWaterBucket(ModBlocks.pureWaterBlock);
+        FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack("pureWater",FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(pureWaterBucket), new ItemStack(Items.bucket));
+        RegisterHelper.registerItem(pureWaterBucket);
 
 
 

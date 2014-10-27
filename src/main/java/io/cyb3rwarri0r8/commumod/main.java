@@ -14,6 +14,7 @@ import io.cyb3rwarri0r8.commumod.config.ConfigHandler;
 import io.cyb3rwarri0r8.commumod.entity.EntityMiner;
 import io.cyb3rwarri0r8.commumod.entity.ModEntities;
 import io.cyb3rwarri0r8.commumod.event.ModEventHandler;
+import io.cyb3rwarri0r8.commumod.help.ModBucketHandler;
 import io.cyb3rwarri0r8.commumod.help.Reference;
 import io.cyb3rwarri0r8.commumod.items.ModItems;
 import io.cyb3rwarri0r8.commumod.proxy.proxyCommon;
@@ -84,6 +85,9 @@ public class main
 
         MinecraftForge.EVENT_BUS.register(new ModEventHandler());
         FMLCommonHandler.instance().bus().register(new ModEventHandler());
+
+        ModBucketHandler.INSTANCE.buckets.put(ModBlocks.pureWaterBlock, ModItems.pureWaterBucket);
+        MinecraftForge.EVENT_BUS.register(ModBucketHandler.INSTANCE);
 
     }
 

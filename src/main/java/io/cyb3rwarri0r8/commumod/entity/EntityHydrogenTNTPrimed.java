@@ -5,10 +5,14 @@ import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.item.EntityTNTPrimed;
+import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.init.Blocks;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.util.AxisAlignedBB;
+import net.minecraft.util.DamageSource;
 import net.minecraft.world.World;
 
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -18,6 +22,7 @@ public class EntityHydrogenTNTPrimed extends EntityTNTPrimed
 {
     public int fusee;
     private EntityLivingBase hydrogenTNTPlacedBy;
+
 
     public EntityHydrogenTNTPrimed(World p_i1729_1_) {
         super(p_i1729_1_);
@@ -108,15 +113,24 @@ public class EntityHydrogenTNTPrimed extends EntityTNTPrimed
                 {
                     if(worldObj.getBlock(posX2, posY2, posZ2) != Blocks.bedrock && worldObj.getBlock(posX2, posY2, posZ2) != Blocks.end_portal_frame && worldObj.getBlock(posX2, posY2, posZ2) != Blocks.end_portal)
                     {
+
+
                         Block getblock = worldObj.getBlock(posX2, posY2, posZ2);
                         worldObj.setBlockToAir(posX2, posY2, posZ2);
                         Random random = new Random();
                         int lol = 0;
                         int lol2 = 0;
-
+                        List<EntityMob> entities = this.worldObj.getEntitiesWithinAABB(EntityMob.class, AxisAlignedBB.getBoundingBox(this.posX - 5, this.posY - 5, this.posZ - 5, this.posX + 5, this.posY + 5, this.posZ + 5));
                         worldObj.setBlock(posX2, posY2, posZ2, Blocks.stone);
-                        //TODO Figure out how to remove the entities in the radius of the blast
-//                        worldObj.removeEntity();
+
+                        for(int i = 0; i <= entities.size() - 1; i++)
+                        {
+
+                            EntityMob entityMob = (EntityMob) entities.get(i);
+                            entityMob.attackEntityFrom(DamageSource.causePlayerDamage(this.worldObj.getClosestPlayer(this.posX, this.posY, this.posZ, 0.0D)),2000F);
+                        }
+
+
 
                     }
 

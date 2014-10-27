@@ -1,11 +1,13 @@
 package io.cyb3rwarri0r8.commumod.blocks;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import io.cyb3rwarri0r8.commumod.fluids.ModFluids;
 import io.cyb3rwarri0r8.commumod.help.RegisterHelper;
 import io.cyb3rwarri0r8.commumod.items.ModItems;
 import io.cyb3rwarri0r8.commumod.main;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
@@ -137,7 +139,19 @@ public class ModBlocks {
 
         hydrogenTNT = new BlockHydrogenTNT();
         RegisterHelper.registerBlock(hydrogenTNT);
+        GameRegistry.addRecipe(new ItemStack(hydrogenTNT,1), new Object[]{
+                "XYX",
+                "YXY",
+                "XYX",
+                'x', ModItems.enderDust, 'y', Blocks.sand
+        });
+
+        pureWaterBlock = new BlockPureWater(ModFluids.pureWater, Material.water);
+        RegisterHelper.registerBlock(pureWaterBlock);
+        
+
     }
+
 
 
 }

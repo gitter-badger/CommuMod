@@ -4,10 +4,7 @@ package io.cyb3rwarri0r8.commumod.proxy;
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import io.cyb3rwarri0r8.commumod.entity.*;
 import io.cyb3rwarri0r8.commumod.items.ModItems;
-import io.cyb3rwarri0r8.commumod.render.RenderAradactiteGolem;
-import io.cyb3rwarri0r8.commumod.render.RenderCobaltBoat;
-import io.cyb3rwarri0r8.commumod.render.RenderSuperbiumGolem;
-import io.cyb3rwarri0r8.commumod.render.renderMiner;
+import io.cyb3rwarri0r8.commumod.render.*;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.renderer.entity.RenderSnowball;
 
@@ -22,7 +19,7 @@ public class proxyClient extends proxyCommon {
         RenderingRegistry.registerEntityRenderingHandler(EntityAxe.class, new RenderSnowball(ModItems.superbiumAxe));
         RenderingRegistry.registerEntityRenderingHandler(EntitySuperbiumGolem.class, new RenderSuperbiumGolem());
         RenderingRegistry.registerEntityRenderingHandler(EntityAradactiteGolem.class, new RenderAradactiteGolem());
-
+        RenderingRegistry.registerEntityRenderingHandler(EntityHydrogenTNTPrimed.class, new RenderHydrogenTNTPrimed());
 
     }
 
