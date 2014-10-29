@@ -9,7 +9,7 @@ import net.minecraftforge.fluids.FluidRegistry;
 public class ModFluids {
 
     public static Fluid pureWater;
-    public void init()
+    public static void init()
     {
         pureWater = new FluidPureWater("pureWater");
         FluidRegistry.registerFluid(pureWater);

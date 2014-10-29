@@ -36,10 +36,12 @@ public class ModBlocks {
     public static Block purifier_idle;
     public static Block purifier_active;
 
-    //Waterdactite
+    //Cobalt
     public static Block cobaltOre;
 
     public static Block appleBlock;
+
+
 
     /**************************************************************************************
     ************************Water/Liquid blocks********************************************/
@@ -148,7 +150,9 @@ public class ModBlocks {
 
         pureWaterBlock = new BlockPureWater(ModFluids.pureWater, Material.water);
         RegisterHelper.registerBlock(pureWaterBlock);
-        
+
+
+
 
     }
 

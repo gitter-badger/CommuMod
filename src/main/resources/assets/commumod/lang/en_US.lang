@@ -42,6 +42,8 @@ tile.superbiumTorch.name=Superbium Torch
 tile.hydrogenTNT.name=Hydrogen TNT
 tile.appleBlock.name=Apple Block
 
+item.pureWaterBucket.name=Pure Water Bucket
+item.cobaltBoat.name=Cobalt Boat
 tile.minerShack.name=Instant Miner Shack
 
 item.rubyPickaxe.name=Ruby Pickaxe

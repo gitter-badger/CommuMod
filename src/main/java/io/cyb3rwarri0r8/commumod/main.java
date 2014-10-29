@@ -13,8 +13,9 @@ import io.cyb3rwarri0r8.commumod.blocks.ModBlocks;
 import io.cyb3rwarri0r8.commumod.config.ConfigHandler;
 import io.cyb3rwarri0r8.commumod.entity.EntityMiner;
 import io.cyb3rwarri0r8.commumod.entity.ModEntities;
-import io.cyb3rwarri0r8.commumod.event.ModEventHandler;
+import io.cyb3rwarri0r8.commumod.fluids.ModFluids;
 import io.cyb3rwarri0r8.commumod.help.ModBucketHandler;
+import io.cyb3rwarri0r8.commumod.help.ModEventHandler;
 import io.cyb3rwarri0r8.commumod.help.Reference;
 import io.cyb3rwarri0r8.commumod.items.ModItems;
 import io.cyb3rwarri0r8.commumod.proxy.proxyCommon;
@@ -50,6 +51,7 @@ public class main
 
         configFile = new Configuration(event.getSuggestedConfigurationFile());
 
+        ModFluids.init();
         ModBlocks.loadBlocks();
         ModItems.loadItems();
         modWorld.initWorldGen();

@@ -5,6 +5,7 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 import io.cyb3rwarri0r8.commumod.blocks.ModBlocks;
 import io.cyb3rwarri0r8.commumod.entity.EntityCobaltBoat;
+import io.cyb3rwarri0r8.commumod.fluids.ModFluids;
 import io.cyb3rwarri0r8.commumod.help.RegisterHelper;
 import io.cyb3rwarri0r8.commumod.main;
 import net.minecraft.init.Items;
@@ -13,7 +14,6 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fluids.FluidContainerRegistry;
-import net.minecraftforge.fluids.FluidRegistry;
 
 /**
  * Created by noah on 5/14/14.
@@ -288,7 +288,7 @@ public class ModItems {
 
 
         pureWaterBucket = new ItemPureWaterBucket(ModBlocks.pureWaterBlock);
-        FluidContainerRegistry.registerFluidContainer(FluidRegistry.getFluidStack("pureWater",FluidContainerRegistry.BUCKET_VOLUME), new ItemStack(pureWaterBucket), new ItemStack(Items.bucket));
+        FluidContainerRegistry.registerFluidContainer(ModFluids.pureWater, new ItemStack(pureWaterBucket), new ItemStack(Items.bucket));
         RegisterHelper.registerItem(pureWaterBucket);
 
 
