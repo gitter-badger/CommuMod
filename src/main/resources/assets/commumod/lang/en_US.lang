@@ -27,9 +27,11 @@ item.aradactiteChestplate.name=Aradactite Chestplate
 item.aradactiteLeggings.name=Aradactite Leggings
 item.aradactiteBoots.name=Aradactite Boots
 
-itemGroup.jamoaTab=JAMOA
+itemGroup.modTab=CommuMod
 
 entity.miner.name=Miner
+entity.superbiumGolem.name=Superbium Golem
+entity.aradactiteGolem.name=Aradactite Golem
 
 item.superCarrot.name=Super Carrot
 
@@ -37,8 +39,13 @@ tile.superbiumTNT.name=Superbium TNT
 entity.superbiumTNT.name=Superbium TNT
 tile.superbiumTorch.name=Superbium Torch
 
-tile.minerShack.name=Instant Miner Shack
+tile.hydrogenTNT.name=Hydrogen TNT
+tile.appleBlock.name=Apple Block
 
+item.pureWaterBucket.name=Pure Water Bucket
+item.cobaltBoat.name=Cobalt Boat
+tile.minerShack.name=Instant Miner Shack
+tile.pureWater.name=Pure Water
 item.rubyPickaxe.name=Ruby Pickaxe
 item.rubyShovel.name=Ruby Shovel
 item.rubyHoe.name=Ruby Hoe
@@ -50,3 +57,8 @@ item.rubyHelmet.name=Ruby Helmet
 item.rubyChestplate.name=Ruby Chestplate
 item.rubyLeggings.name=Ruby Leggings
 item.rubyBoots.name=Ruby Boots
+
+tile.cobaltOre.name=Cobalt Ore
+
+tile.purifierIdle.name=Purifier
+
