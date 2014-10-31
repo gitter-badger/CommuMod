@@ -1,5 +1,6 @@
 package io.cyb3rwarri0r8.commumod.fluids;
 
+import io.cyb3rwarri0r8.commumod.blocks.ModBlocks;
 import net.minecraft.util.IIcon;
 import net.minecraftforge.fluids.Fluid;
 
@@ -16,13 +17,17 @@ public class FluidPureWater extends Fluid {
 
 
     }
+    @Override
     public IIcon getStillIcon()
     {
-        return this.block.getIcon(0,0);
+        return ModBlocks.pureWaterBlock.getIcon(0, 0);
     }
-
+    @Override
     public IIcon getFlowingIcon()
     {
-        return this.block.getIcon(1,0);
+        return ModBlocks.pureWaterBlock.getIcon(1,0);
     }
+
+
+
 }

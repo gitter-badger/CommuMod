@@ -6,7 +6,9 @@ import io.cyb3rwarri0r8.commumod.help.RegisterHelper;
 import io.cyb3rwarri0r8.commumod.items.ModItems;
 import io.cyb3rwarri0r8.commumod.main;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.MapColor;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.material.MaterialLiquid;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
@@ -41,12 +43,14 @@ public class ModBlocks {
 
     public static Block appleBlock;
 
+    public static Material materialRetaw = new MaterialLiquid(MapColor.blueColor);
+
 
 
     /**************************************************************************************
     ************************Water/Liquid blocks********************************************/
     public static Block pureWaterBlock;
-
+    public static Block retawBlock;
 
     public static void loadBlocks()
     {
@@ -151,7 +155,8 @@ public class ModBlocks {
         pureWaterBlock = new BlockPureWater(ModFluids.pureWater, Material.water);
         RegisterHelper.registerBlock(pureWaterBlock);
 
-
+        retawBlock = new BlockRetaw(ModFluids.retaw, materialRetaw);
+        RegisterHelper.registerBlock(retawBlock);
 
 
     }

@@ -82,6 +82,7 @@ public class ModItems {
     public static Item enderDust;
 
     public static Item pureWaterBucket;
+    public static Item retawBucket;
 
     public static Item appleBlock;
 
@@ -275,23 +276,38 @@ public class ModItems {
         rubyBoots = new ItemRubyArmor(rubyArmorMaterial,3,"rubyBoots");
         RegisterHelper.registerItem(rubyBoots);
         RegisterHelper.regArmorRecipe(rubyBoots,ruby,"boots");
-
+        /* *********************************************************************************************************************************************
+        ===============================================COBALT===========================================================================================
+        ************************************************************************************************************************************************
+         */
         cobaltBoat = new ItemCobaltBoat().setUnlocalizedName("cobaltBoat");
         RegisterHelper.registerItem(cobaltBoat);
         EntityRegistry.registerModEntity(EntityCobaltBoat.class, "cobaltBoat", EntityRegistry.findGlobalUniqueEntityId(), main.instance, 80, 3, false);
 
         cobaltIngot = new ItemCobaltIngot();
         RegisterHelper.registerItem(cobaltIngot);
+        GameRegistry.addSmelting(ModBlocks.cobaltOre, new ItemStack(ModItems.cobaltIngot, 1), 10F);
 
         enderDust = new ItemEnderDust();
         RegisterHelper.registerItem(enderDust);
+        RegisterHelper.addPurifying(Items.ender_pearl, new ItemStack(ModItems.enderDust, 1), 15F);
 
 
         pureWaterBucket = new ItemPureWaterBucket(ModBlocks.pureWaterBlock);
         FluidContainerRegistry.registerFluidContainer(ModFluids.pureWater, new ItemStack(pureWaterBucket), new ItemStack(Items.bucket));
         RegisterHelper.registerItem(pureWaterBucket);
+        RegisterHelper.addPurifying(Items.water_bucket, new ItemStack(ModItems.pureWaterBucket, 1), 35F);
 
+        retawBucket = new ItemRetawBucket(ModBlocks.retawBlock);
+        FluidContainerRegistry.registerFluidContainer(ModFluids.retaw, new ItemStack(retawBucket), new ItemStack(Items.bucket));
+        RegisterHelper.registerItem(retawBucket);
+        GameRegistry.addRecipe(new ItemStack(ModItems.retawBucket), new Object[]{
+                "XXX",
+                "XYX",
+                "XXX",
+                'x', ModItems.enderDust, 'y', Items.water_bucket
 
+        });
 
     }
 

@@ -20,7 +20,7 @@ public class PurifierRecipes{
 
     private PurifierRecipes()
     {
-        this.addRecipe(Items.ender_pearl, new ItemStack(ModItems.enderDust, 2), 0.8F);
+
     }
 
 

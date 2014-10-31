@@ -2,6 +2,7 @@ package io.cyb3rwarri0r8.commumod.blocks;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import io.cyb3rwarri0r8.commumod.fluids.ModFluids;
 import io.cyb3rwarri0r8.commumod.help.Reference;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -31,9 +32,10 @@ public class BlockPureWater extends BlockFluidClassic
 
     @Override
     public void registerBlockIcons(IIconRegister register) {
-        this.flowingIcon = register.registerIcon(Reference.MODID + ":" + getUnlocalizedName().substring(5) + "_flow");
-        this.stillIcon = register.registerIcon(Reference.MODID + ":" + getUnlocalizedName().substring(5) + "_still");
-
+        this.flowingIcon = register.registerIcon(Reference.MODID + ":pureWater_flow");
+        this.stillIcon = register.registerIcon(Reference.MODID + ":pureWater_still");
+        ModFluids.pureWater.setStillIcon(stillIcon);
+        ModFluids.pureWater.setFlowingIcon(flowingIcon);
     }
     @Override
     public IIcon getIcon(int side, int meta) {
@@ -61,5 +63,6 @@ public class BlockPureWater extends BlockFluidClassic
 //            entity.motionY = entity.motionY*1.2F;
             entity.motionZ = entity.motionZ*1.2F;
     }
+
 
 }

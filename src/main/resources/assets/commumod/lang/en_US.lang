@@ -45,7 +45,7 @@ tile.appleBlock.name=Apple Block
 item.pureWaterBucket.name=Pure Water Bucket
 item.cobaltBoat.name=Cobalt Boat
 tile.minerShack.name=Instant Miner Shack
-
+tile.pureWater.name=Pure Water
 item.rubyPickaxe.name=Ruby Pickaxe
 item.rubyShovel.name=Ruby Shovel
 item.rubyHoe.name=Ruby Hoe
