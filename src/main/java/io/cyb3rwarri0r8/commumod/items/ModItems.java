@@ -298,7 +298,7 @@ public class ModItems {
         RegisterHelper.registerItem(pureWaterBucket);
         RegisterHelper.addPurifying(Items.water_bucket, new ItemStack(ModItems.pureWaterBucket, 1), 35F);
 
-        retawBucket = new ItemRetawBucket(ModBlocks.retawBlock);
+        /*retawBucket = new ItemRetawBucket(ModBlocks.retawBlock);
         FluidContainerRegistry.registerFluidContainer(ModFluids.retaw, new ItemStack(retawBucket), new ItemStack(Items.bucket));
         RegisterHelper.registerItem(retawBucket);
         GameRegistry.addRecipe(new ItemStack(ModItems.retawBucket), new Object[]{
@@ -307,7 +307,7 @@ public class ModItems {
                 "XXX",
                 'x', ModItems.enderDust, 'y', Items.water_bucket
 
-        });
+        });*/
 
     }
 

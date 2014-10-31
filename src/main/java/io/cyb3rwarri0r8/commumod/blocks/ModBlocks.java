@@ -155,8 +155,8 @@ public class ModBlocks {
         pureWaterBlock = new BlockPureWater(ModFluids.pureWater, Material.water);
         RegisterHelper.registerBlock(pureWaterBlock);
 
-        retawBlock = new BlockRetaw(ModFluids.retaw, materialRetaw);
-        RegisterHelper.registerBlock(retawBlock);
+       /* retawBlock = new BlockRetaw(ModFluids.retaw, materialRetaw);
+        RegisterHelper.registerBlock(retawBlock);*/
 
 
     }

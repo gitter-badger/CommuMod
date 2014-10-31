@@ -1,7 +1,7 @@
-[16:52:29] [main/INFO]: Setting user: Player388
-[16:52:37] [Client thread/INFO]: LWJGL Version: 2.9.1
-[16:52:52] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Community Mod, FMLFileResourcePack:Waila
-[16:52:56] [Client thread/WARN]: Invalid sounds.json
+[14:39:09] [main/INFO]: Setting user: Player871
+[14:39:18] [Client thread/INFO]: LWJGL Version: 2.9.1
+[14:39:49] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Community Mod, FMLFileResourcePack:Waila
+[14:39:54] [Client thread/WARN]: Invalid sounds.json
 com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated object at line 2 column 102
 	at com.google.gson.internal.Streams.parse(Streams.java:56) ~[Streams.class:?]
 	at com.google.gson.TreeTypeAdapter.read(TreeTypeAdapter.java:54) ~[TreeTypeAdapter.class:?]
@@ -43,8 +43,8 @@ Caused by: com.google.gson.stream.MalformedJsonException: Unterminated object at
 	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:642) ~[TypeAdapters$25.class:?]
 	at com.google.gson.internal.Streams.parse(Streams.java:44) ~[Streams.class:?]
 	... 29 more
-[16:52:56] [Sound Library Loader/INFO]: Sound engine started
-[16:52:58] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/blocks/minerShack.png
+[14:39:54] [Sound Library Loader/INFO]: Sound engine started
+[14:39:57] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/blocks/minerShack.png
 java.io.FileNotFoundException: commumod:textures/blocks/minerShack.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -74,8 +74,8 @@ java.io.FileNotFoundException: commumod:textures/blocks/minerShack.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_55]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_55]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[16:52:58] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:52:59] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/items/itemSuperbiumBlock.png
+[14:39:58] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[14:40:00] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/items/itemSuperbiumBlock.png
 java.io.FileNotFoundException: commumod:textures/items/itemSuperbiumBlock.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -105,9 +105,9 @@ java.io.FileNotFoundException: commumod:textures/items/itemSuperbiumBlock.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_55]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_55]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[16:52:59] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[16:53:00] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Community Mod, FMLFileResourcePack:Waila
-[16:53:01] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/items/itemSuperbiumBlock.png
+[14:40:00] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[14:40:02] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Not Enough Items, FMLFileResourcePack:Community Mod, FMLFileResourcePack:Waila
+[14:40:03] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/items/itemSuperbiumBlock.png
 java.io.FileNotFoundException: commumod:textures/items/itemSuperbiumBlock.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -140,8 +140,8 @@ java.io.FileNotFoundException: commumod:textures/items/itemSuperbiumBlock.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_55]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_55]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[16:53:01] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[16:53:02] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/blocks/minerShack.png
+[14:40:03] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[14:40:04] [Client thread/ERROR]: Using missing texture, unable to load commumod:textures/blocks/minerShack.png
 java.io.FileNotFoundException: commumod:textures/blocks/minerShack.png
 	at net.minecraft.client.resources.FallbackResourceManager.getResource(FallbackResourceManager.java:65) ~[FallbackResourceManager.class:?]
 	at net.minecraft.client.resources.SimpleReloadableResourceManager.getResource(SimpleReloadableResourceManager.java:67) ~[SimpleReloadableResourceManager.class:?]
@@ -174,9 +174,9 @@ java.io.FileNotFoundException: commumod:textures/blocks/minerShack.png
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.7.0_55]
 	at java.lang.reflect.Method.invoke(Method.java:606) ~[?:1.7.0_55]
 	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134) [idea_rt.jar:?]
-[16:53:02] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[16:53:03] [Sound Library Loader/INFO]: Sound engine started
-[16:53:03] [Client thread/WARN]: Invalid sounds.json
+[14:40:04] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[14:40:05] [Sound Library Loader/INFO]: Sound engine started
+[14:40:06] [Client thread/WARN]: Invalid sounds.json
 com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: Unterminated object at line 2 column 102
 	at com.google.gson.internal.Streams.parse(Streams.java:56) ~[Streams.class:?]
 	at com.google.gson.TreeTypeAdapter.read(TreeTypeAdapter.java:54) ~[TreeTypeAdapter.class:?]
@@ -221,26 +221,28 @@ Caused by: com.google.gson.stream.MalformedJsonException: Unterminated object at
 	at com.google.gson.internal.bind.TypeAdapters$25.read(TypeAdapters.java:642) ~[TypeAdapters$25.class:?]
 	at com.google.gson.internal.Streams.parse(Streams.java:44) ~[Streams.class:?]
 	... 32 more
-[16:53:03] [Client thread/ERROR]: ########## GL ERROR ##########
-[16:53:03] [Client thread/ERROR]: @ Post startup
-[16:53:03] [Client thread/ERROR]: 1281: Invalid value
-[16:54:57] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
-[16:54:57] [Server thread/INFO]: Generating keypair
-[16:54:58] [Server thread/INFO]: Preparing start region for level 0
-[16:54:59] [Server thread/INFO]: Preparing spawn area: 12%
-[16:55:00] [Server thread/INFO]: Preparing spawn area: 88%
-[16:55:00] [Server thread/INFO]: Changing view distance to 2, from 10
-[16:55:02] [Server thread/INFO]: Player388[local:E:aec9a91b] logged in with entity id 256 at (-72.98840550814967, 63.0, 386.9924441382016)
-[16:55:02] [Server thread/INFO]: Player388 joined the game
-[16:55:04] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2588ms behind, skipping 51 tick(s)
-[16:55:33] [Server thread/INFO]: Saving and pausing game...
-[16:55:33] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:55:33] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:55:33] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:55:33] [Server thread/INFO]: Stopping server
-[16:55:33] [Server thread/INFO]: Saving players
-[16:55:33] [Server thread/INFO]: Saving worlds
-[16:55:33] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
-[16:55:33] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
-[16:55:33] [Server thread/INFO]: Saving chunks for level 'New World'/The End
-[16:55:35] [Client thread/INFO]: Stopping!
+[14:40:06] [Client thread/ERROR]: ########## GL ERROR ##########
+[14:40:06] [Client thread/ERROR]: @ Post startup
+[14:40:06] [Client thread/ERROR]: 1281: Invalid value
+[14:40:52] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[14:40:52] [Server thread/INFO]: Generating keypair
+[14:41:01] [Server thread/INFO]: Preparing start region for level 0
+[14:41:02] [Server thread/INFO]: Preparing spawn area: 20%
+[14:41:03] [Server thread/INFO]: Preparing spawn area: 83%
+[14:41:04] [Server thread/INFO]: Changing view distance to 2, from 10
+[14:41:05] [Server thread/INFO]: Player871[local:E:f33e8e77] logged in with entity id 255 at (-74.81369237857025, 63.0, 388.48499717408487)
+[14:41:05] [Server thread/INFO]: Player871 joined the game
+[14:41:07] [Server thread/WARN]: Can't keep up! Did the system time change, or is the server overloaded? Running 2337ms behind, skipping 46 tick(s)
+[14:41:20] [Server thread/INFO]: Player871 has just earned the achievement [Taking Inventory]
+[14:41:21] [Client thread/INFO]: [CHAT] Player871 has just earned the achievement [Taking Inventory]
+[14:41:29] [Server thread/INFO]: Saving and pausing game...
+[14:41:29] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:41:29] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:41:29] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:41:30] [Server thread/INFO]: Stopping server
+[14:41:30] [Server thread/INFO]: Saving players
+[14:41:30] [Server thread/INFO]: Saving worlds
+[14:41:30] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[14:41:30] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[14:41:30] [Server thread/INFO]: Saving chunks for level 'New World'/The End
+[14:41:32] [Client thread/INFO]: Stopping!

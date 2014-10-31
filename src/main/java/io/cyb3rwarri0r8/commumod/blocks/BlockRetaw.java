@@ -1,12 +1,18 @@
 package io.cyb3rwarri0r8.commumod.blocks;
 
+
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import io.cyb3rwarri0r8.commumod.fluids.ModFluids;
 import io.cyb3rwarri0r8.commumod.help.Reference;
+import io.cyb3rwarri0r8.commumod.help.ServerHelper;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.Blocks;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -63,6 +69,30 @@ public class BlockRetaw extends BlockFluidClassic
     public boolean displaceIfPossible(World world, int x, int y, int z) {
         if (world.getBlock(x,  y,  z).getMaterial().isLiquid()) return false;
         return super.displaceIfPossible(world, x, y, z);
+    }
+
+    @Override
+    public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity) {
+        if (!effect) {
+            return;
+        }
+        if (entity instanceof EntityLivingBase) {
+            if (entity.motionY < -0.2) {
+                entity.motionY *= 0.5;
+                if (entity.fallDistance > 20) {
+                    entity.fallDistance = 20;
+                } else {
+                    entity.fallDistance *= 0.95;
+                }
+            }
+        }
+        if (ServerHelper.isClientWorld(world)) {
+            return;
+        }
+        if (world.getTotalWorldTime() % 8 == 0 && entity instanceof EntityLivingBase && !((EntityLivingBase) entity).isEntityUndead()) {
+            ((EntityLivingBase) entity).addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 6 * 20, 0));
+            ((EntityLivingBase) entity).addPotionEffect(new PotionEffect(Potion.jump.id, 6 * 20, 0));
+        }
     }
 
     @Override
