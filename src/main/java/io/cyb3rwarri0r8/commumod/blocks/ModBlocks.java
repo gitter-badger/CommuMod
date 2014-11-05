@@ -57,28 +57,30 @@ public class ModBlocks {
         //Load all necessary blocks here...
         superbiumOre = new BlockSuperbiumOre();
         RegisterHelper.registerBlock(superbiumOre);
+
+
         // ******************************************************************************
+
+
         superbiumBlock = new BlockSuperbiumBlock(Material.rock);
         RegisterHelper.registerBlock(superbiumBlock);
-        GameRegistry.addRecipe(new ItemStack(superbiumBlock, 1), new Object[]{
-                "XXX",
-                "XXX",
-                "XXX",
-                'x', ModItems.superbiumIngot
-        });
+        RegisterHelper.addBlockRecipe(ModItems.superbiumIngot, new ItemStack(superbiumBlock));
+
+
         // ******************************************************************************
+
+
         //Aradactite
         aradactiteOre = new BlockAradactiteOre();
         RegisterHelper.registerBlock(aradactiteOre);
+
+
         // Aradactite block
         aradactiteBlock = new BlockAradactiteBlock(Material.anvil);
         RegisterHelper.registerBlock(aradactiteBlock);
-        GameRegistry.addRecipe(new ItemStack(aradactiteBlock, 1), new Object[]{
-                "XXX",
-                "XXX",
-                "XXX",
-                'x', ModItems.aradactiteIngot
-        });
+        RegisterHelper.addBlockRecipe(ModItems.aradactiteIngot, new ItemStack(aradactiteBlock));
+
+
         // Superbium TNT
         superbiumTNT = new BlockSuperbiumTNT();
         RegisterHelper.registerBlock(superbiumTNT);
@@ -108,12 +110,7 @@ public class ModBlocks {
 
         rubyBlock = new BlockRuby(Material.rock);
         RegisterHelper.registerBlock(rubyBlock);
-        GameRegistry.addRecipe(new ItemStack(rubyBlock,1), new Object[]{
-                "XXX",
-                "XXX",
-                "XXX",
-                'x', ModItems.ruby
-        });
+        RegisterHelper.addBlockRecipe(ModItems.ruby, new ItemStack(rubyBlock));
 
 
 
@@ -136,12 +133,8 @@ public class ModBlocks {
 
         appleBlock = new BlockOfApple();
         RegisterHelper.registerBlock(appleBlock);
-        GameRegistry.addRecipe(new ItemStack(appleBlock,1), new Object[]{
-                "XXX",
-                "XXX",
-                "XXX",
-                'x', Items.apple
-        });
+        RegisterHelper.addBlockRecipe(Items.apple, new ItemStack(appleBlock));
+        GameRegistry.addShapelessRecipe(new ItemStack(Items.apple,9), new ItemStack(appleBlock));
 
         hydrogenTNT = new BlockHydrogenTNT();
         RegisterHelper.registerBlock(hydrogenTNT);

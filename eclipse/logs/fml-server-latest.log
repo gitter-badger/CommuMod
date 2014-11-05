@@ -831,8 +831,8 @@ java.lang.NullPointerException
 [09:30:48] [Server thread/TRACE] [FML/]: Recursing into package assets
 [09:30:48] [Server thread/TRACE] [FML/]: Recursing into package assets.commumod
 [09:30:48] [Server thread/TRACE] [FML/]: Recursing into package assets.commumod.lang
-[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package assets.commumod.models
-[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package assets.commumod.models.armor
+[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package assets.commumod.textures.models
+[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package assets.commumod.textures.models.armor
 [09:30:48] [Server thread/TRACE] [FML/]: Recursing into package assets.commumod.textures
 [09:30:48] [Server thread/TRACE] [FML/]: Recursing into package assets.commumod.textures.blocks
 [09:30:48] [Server thread/TRACE] [FML/]: Recursing into package assets.commumod.textures.entity

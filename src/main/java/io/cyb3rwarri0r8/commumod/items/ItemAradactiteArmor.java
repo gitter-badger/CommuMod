@@ -22,9 +22,9 @@ public class ItemAradactiteArmor extends ItemArmor {
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type)
     {
         if (stack.getItem() == ModItems.aradactiteHelmet || stack.getItem() == ModItems.aradactiteChestplate || stack.getItem() == ModItems.aradactiteBoots){
-            return Reference.MODID + ":" + "models/armor/aradactiteLayer_1.png";
+            return Reference.MODID + ":" + "textures/models/armor/aradactiteLayer_1.png";
         }else if(stack.getItem() == ModItems.aradactiteLeggings){
-            return Reference.MODID + ":" + "models/armor/aradactiteLayer_2.png";
+            return Reference.MODID + ":" + "textures/models/armor/aradactiteLayer_2.png";
         }else {
             System.out.println("Error: Texture not found! Check spelling!");
             return null;

@@ -142,4 +142,16 @@ public class RegisterHelper {
         PurifierRecipes.smelting().addRecipe(input, output, xp);
     }
 
+    public static void addBlockRecipe(Item item, ItemStack output)
+    {
+        GameRegistry.addRecipe(output, new Object[]{
+                "XXX",
+                "XXX",
+                "XXX",
+                'x',item
+        });
+
+
+    }
+
 }

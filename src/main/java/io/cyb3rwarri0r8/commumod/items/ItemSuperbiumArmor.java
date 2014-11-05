@@ -26,9 +26,9 @@ public class ItemSuperbiumArmor extends ItemArmor {
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
         if (stack.getItem() == ModItems.superbiumHelmet || stack.getItem() == ModItems.superbiumChestPlate || stack.getItem() == ModItems.superbiumBoots) {
-            return Reference.MODID + ":" + "/models/armor/superbiumarmor_1.png";
+            return Reference.MODID + ":" + "textures/models/armor/superbiumarmor_1.png";
         }else if(stack.getItem() == ModItems.superbiumLeggings) {
-            return Reference.MODID + ":" + "/models/armor/superbiumarmor_2.png";
+            return Reference.MODID + ":" + "textures/models/armor/superbiumarmor_2.png";
         }else {
             System.out.println("Error: Texture not found! Check spelling!");
             return null;

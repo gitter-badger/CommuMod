@@ -44,6 +44,7 @@ public class ConfigHandler
             configuration.save();
         }
 
+
     }
 
     @SubscribeEvent
