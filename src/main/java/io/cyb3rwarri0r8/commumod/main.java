@@ -28,7 +28,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.config.Configuration;
 
 
-@Mod(modid = io.cyb3rwarri0r8.commumod.help.Reference.MODID, version = io.cyb3rwarri0r8.commumod.help.Reference.VERSION, guiFactory = Reference.GuiFactoryClass)
+@Mod(modid = Reference.MODID, version = Reference.VERSION, guiFactory = Reference.GuiFactoryClass)
 
 
 
@@ -54,6 +54,7 @@ public class main
 
         ModFluids.init();
         ModBlocks.loadBlocks();
+
         ModItems.loadItems();
         modWorld.initWorldGen();
         ModEntities.init();

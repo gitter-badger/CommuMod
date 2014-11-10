@@ -65,6 +65,7 @@ public class ModBlocks {
         superbiumBlock = new BlockSuperbiumBlock(Material.rock);
         RegisterHelper.registerBlock(superbiumBlock);
         RegisterHelper.addBlockRecipe(ModItems.superbiumIngot, new ItemStack(superbiumBlock));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.superbiumIngot, 9), new Object[]{superbiumBlock});
 
 
         // ******************************************************************************
@@ -79,6 +80,7 @@ public class ModBlocks {
         aradactiteBlock = new BlockAradactiteBlock(Material.anvil);
         RegisterHelper.registerBlock(aradactiteBlock);
         RegisterHelper.addBlockRecipe(ModItems.aradactiteIngot, new ItemStack(aradactiteBlock));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.aradactiteIngot, 9), new Object[]{aradactiteBlock});
 
 
         // Superbium TNT
@@ -111,6 +113,7 @@ public class ModBlocks {
         rubyBlock = new BlockRuby(Material.rock);
         RegisterHelper.registerBlock(rubyBlock);
         RegisterHelper.addBlockRecipe(ModItems.ruby, new ItemStack(rubyBlock));
+        GameRegistry.addShapelessRecipe(new ItemStack(ModItems.ruby, 9), new Object[]{rubyBlock});
 
 
 

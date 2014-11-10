@@ -1,13 +1,8 @@
 package io.cyb3rwarri0r8.commumod.help;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import io.cyb3rwarri0r8.commumod.blocks.ModBlocks;
-import io.cyb3rwarri0r8.commumod.fluids.ModFluids;
 import io.cyb3rwarri0r8.commumod.items.ModItems;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraftforge.client.event.TextureStitchEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
 
 /**
@@ -36,14 +31,14 @@ public class ModEventHandler
         }
     }
 
-    @SubscribeEvent
+    /*@SubscribeEvent
     @SideOnly(Side.CLIENT)
     public void textureHook(TextureStitchEvent.Post event) {
         if (event.map.getTextureType() == 0) {
             ModFluids.pureWater.setIcons(ModBlocks.pureWaterBlock.getIcon(0,0), ModBlocks.pureWaterBlock.getIcon(1, 0));
 
         }
-    }
+    }*/
 
 
 }

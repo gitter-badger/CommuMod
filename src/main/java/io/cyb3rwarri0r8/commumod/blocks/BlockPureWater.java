@@ -59,13 +59,13 @@ public class BlockPureWater extends BlockFluidClassic
     @Override
     public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity)
     {
-            if(entity.motionZ >= 1)
+            if(entity.motionZ <= 1)
             {
-                entity.motionZ = entity.motionZ*1.1D;
+                entity.motionZ = entity.motionZ * 1.1D;
             }
-            else if(entity.motionX >= 1)
+            else if(entity.motionX <= 1)
             {
-                entity.motionX = entity.motionX*1.1D;
+                entity.motionX = entity.motionX * 1.1D;
             }
             /*else{
                 entity.motionX = entity.motionX*1.1D;
