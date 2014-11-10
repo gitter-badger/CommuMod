@@ -15,7 +15,7 @@ import org.lwjgl.opengl.GL11;
  */
 
 public class RenderCobaltBoat extends Render {
-    private static final ResourceLocation boatTextures = new ResourceLocation(Reference.MODID + ":/models/cobaltBoat.png");
+    private static final ResourceLocation boatTextures = new ResourceLocation(Reference.MODID + ":" + "textures/models/cobaltBoat.png");
     /** instance of ModelBoat for rendering */
     protected ModelBase modelBoat;
 

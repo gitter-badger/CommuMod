@@ -2,9 +2,9 @@ package io.cyb3rwarri0r8.commumod.render;
 
 import io.cyb3rwarri0r8.commumod.blocks.ModBlocks;
 import io.cyb3rwarri0r8.commumod.entity.EntityHydrogenTNTPrimed;
+import io.cyb3rwarri0r8.commumod.help.Reference;
 import net.minecraft.client.renderer.RenderBlocks;
-import net.minecraft.client.renderer.entity.Render;
-import net.minecraft.client.renderer.texture.TextureMap;
+import net.minecraft.client.renderer.entity.RenderTNTPrimed;
 import net.minecraft.entity.Entity;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.ResourceLocation;
@@ -13,9 +13,10 @@ import org.lwjgl.opengl.GL11;
 /**
  * Created by noah on 10/26/14.
  */
-public class RenderHydrogenTNTPrimed extends Render
+public class RenderHydrogenTNTPrimed extends RenderTNTPrimed
 {
     private RenderBlocks blockRenderer = new RenderBlocks();
+    private ResourceLocation hydrogentntprimedtextures = new ResourceLocation(Reference.MODID + ":" + "textures/models/hydrogentnt/hydrogenTNT_side.png");
 
     public RenderHydrogenTNTPrimed()
     {
@@ -80,7 +81,7 @@ public class RenderHydrogenTNTPrimed extends Render
      */
     protected ResourceLocation getEntityTexture(EntityHydrogenTNTPrimed p_110775_1_)
     {
-        return TextureMap.locationBlocksTexture;
+        return hydrogentntprimedtextures;
     }
 
     /**

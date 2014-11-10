@@ -27,14 +27,9 @@ public class EntityMiner extends EntityMob {
         this.tasks.addTask(3, new EntityAILookIdle(this));
         this.tasks.addTask(4, new EntityAIWander(this, 1.0D));
         this.tasks.addTask(5, new EntityAIAttackOnCollide(this, 1.0D, true));
-
-
+        this.tasks.addTask(6, new EntityAIMoveTowardsTarget(this, 1.0D, 2.0F));
         this.addRandomArmor();
         this.setSprinting(false);
-
-
-
-
     }
 
     public boolean isAIEnabled()
@@ -50,11 +45,8 @@ public class EntityMiner extends EntityMob {
         getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(20.0D);
         getEntityAttribute(SharedMonsterAttributes.followRange).setBaseValue(32.0D);
         getEntityAttribute(SharedMonsterAttributes.knockbackResistance).setBaseValue(0.0D);
-        getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(2.0D);
+        getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(1.2D);
         getEntityAttribute(SharedMonsterAttributes.attackDamage).setBaseValue(2.0D);
-
-
-
     }
 
     protected void entityInit()

@@ -1,4 +1,4 @@
-package io.cyb3rwarri0r8.commumod;
+package io.cyb3rwarri0r8.commumod.client;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

@@ -63,18 +63,18 @@ public class EntityAxe extends EntityThrowable {
 /* This method creates the explosion!
 * It uses the entity (Can be null)
 * the three coordinates, the strength
-* and if it should spawn smoke particles
+* and if it should set neighboring blocks on fire
 * around after exploding, the last parameter
-* is if it should set neighboring blocks on fire
+* is if it  should spawn smoke particles
 */
-            this.worldObj.newExplosion(this, mop.blockX, mop.blockY, mop.blockZ, 4.0F, false, true);
+            this.worldObj.newExplosion(this, mop.blockX, mop.blockY, mop.blockZ, 4.0F, false, false);
         }
 //If the Server is online and works, kill this entity
         if (!this.worldObj.isRemote)
         {
             this.setDead();
         }
-        System.out.println("Entity landed!");
+
 
     }
 }

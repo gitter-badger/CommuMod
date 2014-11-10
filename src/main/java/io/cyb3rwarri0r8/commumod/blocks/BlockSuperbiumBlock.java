@@ -12,7 +12,7 @@ import net.minecraft.util.IIcon;
  */
 public class BlockSuperbiumBlock extends Block {
     public BlockSuperbiumBlock(Material material) {
-        super(Material.rock);
+        super(material);
         this.setBlockName("superbiumBlock");
         this.setBlockTextureName(Reference.MODID + ":" + getUnlocalizedName().substring(5));
         this.setCreativeTab(main.modTab);

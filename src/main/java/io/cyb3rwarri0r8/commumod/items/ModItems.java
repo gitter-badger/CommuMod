@@ -283,7 +283,12 @@ public class ModItems {
         cobaltBoat = new ItemCobaltBoat().setUnlocalizedName("cobaltBoat");
         RegisterHelper.registerItem(cobaltBoat);
         EntityRegistry.registerModEntity(EntityCobaltBoat.class, "cobaltBoat", EntityRegistry.findGlobalUniqueEntityId(), main.instance, 80, 3, false);
-
+        GameRegistry.addRecipe(new ItemStack(cobaltBoat,1), new Object[]{
+                "   ",
+                "X X",
+                "XXX",
+                'x', ModItems.cobaltIngot
+        });
         cobaltIngot = new ItemCobaltIngot();
         RegisterHelper.registerItem(cobaltIngot);
         GameRegistry.addSmelting(ModBlocks.cobaltOre, new ItemStack(ModItems.cobaltIngot, 1), 10F);

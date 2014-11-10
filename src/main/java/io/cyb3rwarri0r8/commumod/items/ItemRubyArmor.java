@@ -23,9 +23,9 @@ public class ItemRubyArmor extends ItemArmor {
     @Override
     public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
         if (stack.getItem() == ModItems.rubyHelmet || stack.getItem() == ModItems.rubyChestplate || stack.getItem() == ModItems.rubyBoots) {
-            return Reference.MODID + ":" + "models/armor/rubyarmor_1.png";
+            return Reference.MODID + ":" + "textures/models/armor/rubyarmor_1.png";
         } else if (stack.getItem() == ModItems.rubyLeggings) {
-            return Reference.MODID + ":" + "models/armor/rubyarmor_2.png";
+            return Reference.MODID + ":" + "textures/models/armor/rubyarmor_2.png";
         } else {
             System.out.println("Error: Texture not found!");
             return null;

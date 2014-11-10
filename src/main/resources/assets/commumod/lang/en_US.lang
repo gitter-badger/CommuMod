@@ -28,6 +28,8 @@ item.aradactiteLeggings.name=Aradactite Leggings
 item.aradactiteBoots.name=Aradactite Boots
 
 itemGroup.modTab=CommuMod
+item.cobaltIngot.name=Cobalt Ingot
+item.enderDust.name=Ender Dust
 
 entity.miner.name=Miner
 entity.superbiumGolem.name=Superbium Golem

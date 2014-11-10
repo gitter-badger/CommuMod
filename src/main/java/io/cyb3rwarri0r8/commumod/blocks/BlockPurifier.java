@@ -54,19 +54,9 @@ public class BlockPurifier extends BlockContainer
 
     public IIcon getIcon(int side, int meta)
     {
-        /*if(side == 1)
-        {
-            return top;
-        }
-        else if (side == 5)
-        {
-            return front;
-        }
-        else
-        {
-            return this.blockIcon;
-        }*/
+
         return side == 1 ? this.top : (side == 0 ? this.top : (side != meta ? this.blockIcon : this.front));
+
     }
 
     public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int par6, float par7, float par8, float par9)

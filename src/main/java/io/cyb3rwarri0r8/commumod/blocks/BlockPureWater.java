@@ -59,9 +59,18 @@ public class BlockPureWater extends BlockFluidClassic
     @Override
     public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity)
     {
-            entity.motionX = entity.motionX*1.2F;
-//            entity.motionY = entity.motionY*1.2F;
-            entity.motionZ = entity.motionZ*1.2F;
+            if(entity.motionZ <= 1)
+            {
+                entity.motionZ = entity.motionZ * 1.1D;
+            }
+            else if(entity.motionX <= 1)
+            {
+                entity.motionX = entity.motionX * 1.1D;
+            }
+            /*else{
+                entity.motionX = entity.motionX*1.1D;
+                entity.motionZ = entity.motionZ*1.1D;
+            }*/
     }
 
 
