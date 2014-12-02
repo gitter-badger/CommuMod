@@ -4,7 +4,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import io.cyb3rwarri0r8.commumod.blocks.BlockPurifier;
-import io.cyb3rwarri0r8.commumod.help.PurifierRecipes;
+import io.cyb3rwarri0r8.commumod.lib.PurifierRecipes;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;

@@ -851,18 +851,18 @@ java.lang.NullPointerException
 [09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.client
 [09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.client.container
 [09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.client.gui
-[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.client.handler
+[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.lib.handler
 [09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.config
 [09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.entity
 [09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.event
-[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.food_items
-[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.help
+[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.items.food_items
+[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.lib
 [09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.items
 [09:30:48] [Server thread/DEBUG] [FML/]: Identified an FMLMod type mod io.cyb3rwarri0r8.commumod.main
 [09:30:48] [Server thread/TRACE] [commumod/]: Parsed dependency info : [] [] []
-[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.model
-[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.proxy
-[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.render
+[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.entity.model
+[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.lib.proxy
+[09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.entity.render
 [09:30:48] [Server thread/TRACE] [FML/]: Recursing into package io.cyb3rwarri0r8.commumod.world
 [09:30:48] [Server thread/DEBUG] [FML/]: Examining directory start for potential mods
 [09:30:48] [Server thread/DEBUG] [FML/]: No mcmod.info file found in directory start
@@ -1022,7 +1022,7 @@ java.lang.NullPointerException
 [09:30:56] [Server thread/TRACE] [FML/commumod]: Testing mod commumod to verify it accepts its own version in a remote connection
 [09:30:56] [Server thread/TRACE] [FML/commumod]: The mod commumod accepts its own version (1.4.0a Build: 107)
 [09:30:56] [Server thread/DEBUG] [FML/commumod]: Attempting to inject @SidedProxy classes into commumod
-[09:30:56] [Server thread/ERROR] [FML/commumod]: An error occured trying to load a proxy into {clientSide=io.cyb3rwarri0r8.commumod.proxy.proxyClient, serverSide=io.cyb3rwarri0r8.commumod.proxy.proxyCommon}.io.cyb3rwarri0r8.commumod.main
+[09:30:56] [Server thread/ERROR] [FML/commumod]: An error occured trying to load a proxy into {clientSide=io.cyb3rwarri0r8.commumod.lib.proxy.proxyClient, serverSide=io.cyb3rwarri0r8.commumod.lib.proxy.proxyCommon}.io.cyb3rwarri0r8.commumod.main
 java.lang.InstantiationException
 	at sun.reflect.InstantiationExceptionConstructorAccessorImpl.newInstance(InstantiationExceptionConstructorAccessorImpl.java:48) ~[?:1.7.0_55]
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:526) ~[?:1.7.0_55]

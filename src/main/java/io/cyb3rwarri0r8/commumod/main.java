@@ -11,15 +11,15 @@ import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 import io.cyb3rwarri0r8.commumod.blocks.ModBlocks;
 import io.cyb3rwarri0r8.commumod.client.CreativeTabsCommuMod;
-import io.cyb3rwarri0r8.commumod.config.ConfigHandler;
+import io.cyb3rwarri0r8.commumod.lib.handler.ConfigHandler;
 import io.cyb3rwarri0r8.commumod.entity.EntityMiner;
 import io.cyb3rwarri0r8.commumod.entity.ModEntities;
 import io.cyb3rwarri0r8.commumod.fluids.ModFluids;
-import io.cyb3rwarri0r8.commumod.help.ModBucketHandler;
-import io.cyb3rwarri0r8.commumod.help.ModEventHandler;
-import io.cyb3rwarri0r8.commumod.help.Reference;
+import io.cyb3rwarri0r8.commumod.lib.handler.ModBucketHandler;
+import io.cyb3rwarri0r8.commumod.lib.handler.ModEventHandler;
+import io.cyb3rwarri0r8.commumod.lib.Reference;
 import io.cyb3rwarri0r8.commumod.items.ModItems;
-import io.cyb3rwarri0r8.commumod.proxy.proxyCommon;
+import io.cyb3rwarri0r8.commumod.lib.proxy.proxyCommon;
 import io.cyb3rwarri0r8.commumod.world.modWorld;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.EnumCreatureType;
@@ -34,7 +34,7 @@ import net.minecraftforge.common.config.Configuration;
 
 public class main
 {
-    @SidedProxy(clientSide="io.cyb3rwarri0r8.commumod.proxy.proxyClient", serverSide="io.cyb3rwarri0r8.commumod.proxy.proxyCommon")
+    @SidedProxy(clientSide="io.cyb3rwarri0r8.commumod.lib.proxy.proxyClient", serverSide="io.cyb3rwarri0r8.commumod.lib.proxy.proxyCommon")
     public static proxyCommon proxy;
 
     // Create a new creative tab

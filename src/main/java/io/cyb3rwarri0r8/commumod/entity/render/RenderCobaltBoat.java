@@ -1,8 +1,8 @@
-package io.cyb3rwarri0r8.commumod.render;
+package io.cyb3rwarri0r8.commumod.entity.render;
 
 import io.cyb3rwarri0r8.commumod.entity.EntityCobaltBoat;
-import io.cyb3rwarri0r8.commumod.help.Reference;
-import io.cyb3rwarri0r8.commumod.model.ModelCobaltBoat;
+import io.cyb3rwarri0r8.commumod.lib.Reference;
+import io.cyb3rwarri0r8.commumod.entity.model.ModelCobaltBoat;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.entity.Entity;

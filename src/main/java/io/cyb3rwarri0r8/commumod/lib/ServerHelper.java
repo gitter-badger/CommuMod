@@ -1,4 +1,4 @@
-package io.cyb3rwarri0r8.commumod.help;
+package io.cyb3rwarri0r8.commumod.lib;
 
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.common.FMLCommonHandler;

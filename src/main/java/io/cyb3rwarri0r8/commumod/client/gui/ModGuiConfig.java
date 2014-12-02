@@ -1,8 +1,8 @@
 package io.cyb3rwarri0r8.commumod.client.gui;
 
 import cpw.mods.fml.client.config.GuiConfig;
-import io.cyb3rwarri0r8.commumod.config.ConfigHandler;
-import io.cyb3rwarri0r8.commumod.help.Reference;
+import io.cyb3rwarri0r8.commumod.lib.handler.ConfigHandler;
+import io.cyb3rwarri0r8.commumod.lib.Reference;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraftforge.common.config.ConfigElement;
 import net.minecraftforge.common.config.Configuration;

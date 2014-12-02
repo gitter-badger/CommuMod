@@ -1,4 +1,4 @@
-package io.cyb3rwarri0r8.commumod.model;
+package io.cyb3rwarri0r8.commumod.entity.model;
 
 import io.cyb3rwarri0r8.commumod.entity.EntitySuperbiumGolem;
 import net.minecraft.client.model.ModelBase;

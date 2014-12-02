@@ -3,7 +3,7 @@ package io.cyb3rwarri0r8.commumod.client.container;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import io.cyb3rwarri0r8.commumod.entity.TileEntityPurifier;
-import io.cyb3rwarri0r8.commumod.help.PurifierRecipes;
+import io.cyb3rwarri0r8.commumod.lib.PurifierRecipes;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
 import net.minecraft.inventory.Container;

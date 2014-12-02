@@ -1,7 +1,5 @@
-package io.cyb3rwarri0r8.commumod.help;
+package io.cyb3rwarri0r8.commumod.lib;
 
-import io.cyb3rwarri0r8.commumod.items.ModItems;
-import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 

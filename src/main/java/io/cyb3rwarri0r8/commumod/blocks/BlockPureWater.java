@@ -3,7 +3,7 @@ package io.cyb3rwarri0r8.commumod.blocks;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import io.cyb3rwarri0r8.commumod.fluids.ModFluids;
-import io.cyb3rwarri0r8.commumod.help.Reference;
+import io.cyb3rwarri0r8.commumod.lib.Reference;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;

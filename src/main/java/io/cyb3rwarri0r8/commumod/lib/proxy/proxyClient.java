@@ -1,10 +1,10 @@
-package io.cyb3rwarri0r8.commumod.proxy;
+package io.cyb3rwarri0r8.commumod.lib.proxy;
 
 
 import cpw.mods.fml.client.registry.RenderingRegistry;
 import io.cyb3rwarri0r8.commumod.entity.*;
 import io.cyb3rwarri0r8.commumod.items.ModItems;
-import io.cyb3rwarri0r8.commumod.render.*;
+import io.cyb3rwarri0r8.commumod.entity.render.*;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.renderer.entity.RenderSnowball;
 

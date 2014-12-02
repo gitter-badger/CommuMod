@@ -1,8 +1,8 @@
-package io.cyb3rwarri0r8.commumod.config;
+package io.cyb3rwarri0r8.commumod.lib.handler;
 
 import cpw.mods.fml.client.event.ConfigChangedEvent;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
-import io.cyb3rwarri0r8.commumod.help.Reference;
+import io.cyb3rwarri0r8.commumod.lib.Reference;
 import net.minecraftforge.common.config.Configuration;
 
 import java.io.File;

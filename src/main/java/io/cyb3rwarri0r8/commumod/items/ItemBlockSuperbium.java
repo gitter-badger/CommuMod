@@ -1,7 +1,7 @@
 package io.cyb3rwarri0r8.commumod.items;
 
 
-import io.cyb3rwarri0r8.commumod.help.Reference;
+import io.cyb3rwarri0r8.commumod.lib.Reference;
 
 /**
  * Created by noah on 5/16/14.

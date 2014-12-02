@@ -1,14 +1,14 @@
-package io.cyb3rwarri0r8.commumod.proxy;
+package io.cyb3rwarri0r8.commumod.lib.proxy;
 
 import com.google.common.base.Predicates;
 import com.google.common.collect.Iterators;
 import cpw.mods.fml.common.network.NetworkRegistry;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
-import io.cyb3rwarri0r8.commumod.client.handler.ModGuiHandler;
+import io.cyb3rwarri0r8.commumod.lib.handler.ModGuiHandler;
 import io.cyb3rwarri0r8.commumod.entity.EntityMiner;
 import io.cyb3rwarri0r8.commumod.entity.TileEntityPurifier;
-import io.cyb3rwarri0r8.commumod.help.Reference;
+import io.cyb3rwarri0r8.commumod.lib.Reference;
 import io.cyb3rwarri0r8.commumod.main;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.world.biome.BiomeGenBase;

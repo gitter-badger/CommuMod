@@ -1,8 +1,8 @@
-package io.cyb3rwarri0r8.commumod.render;
+package io.cyb3rwarri0r8.commumod.entity.render;
 
 import io.cyb3rwarri0r8.commumod.entity.EntityAradactiteGolem;
-import io.cyb3rwarri0r8.commumod.help.Reference;
-import io.cyb3rwarri0r8.commumod.model.ModelAradactiteGolem;
+import io.cyb3rwarri0r8.commumod.lib.Reference;
+import io.cyb3rwarri0r8.commumod.entity.model.ModelAradactiteGolem;
 import net.minecraft.client.renderer.OpenGlHelper;
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.texture.TextureMap;

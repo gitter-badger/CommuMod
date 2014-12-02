@@ -1,4 +1,4 @@
-package io.cyb3rwarri0r8.commumod.help;
+package io.cyb3rwarri0r8.commumod.lib.handler;
 
 import cpw.mods.fml.common.eventhandler.Event;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;

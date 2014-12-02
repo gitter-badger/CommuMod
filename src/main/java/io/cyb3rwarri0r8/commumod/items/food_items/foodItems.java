@@ -1,8 +1,8 @@
-package io.cyb3rwarri0r8.commumod.food_items;
+package io.cyb3rwarri0r8.commumod.items.food_items;
 
 
 import cpw.mods.fml.common.registry.GameRegistry;
-import io.cyb3rwarri0r8.commumod.help.RegisterHelper;
+import io.cyb3rwarri0r8.commumod.lib.RegisterHelper;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;

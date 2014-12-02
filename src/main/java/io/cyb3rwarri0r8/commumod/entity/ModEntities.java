@@ -1,6 +1,6 @@
 package io.cyb3rwarri0r8.commumod.entity;
 
-import io.cyb3rwarri0r8.commumod.help.RegisterHelper;
+import io.cyb3rwarri0r8.commumod.lib.RegisterHelper;
 
 /**
  * Created by noah on 10/12/14.

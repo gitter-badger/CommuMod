@@ -1,7 +1,7 @@
 package io.cyb3rwarri0r8.commumod.entity;
 
 
-import io.cyb3rwarri0r8.commumod.food_items.foodItems;
+import io.cyb3rwarri0r8.commumod.items.food_items.foodItems;
 import io.cyb3rwarri0r8.commumod.items.ModItems;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.IEntityLivingData;

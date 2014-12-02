@@ -1,4 +1,4 @@
-package io.cyb3rwarri0r8.commumod.model;
+package io.cyb3rwarri0r8.commumod.entity.model;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;

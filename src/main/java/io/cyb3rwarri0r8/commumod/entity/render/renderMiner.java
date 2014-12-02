@@ -1,6 +1,6 @@
-package io.cyb3rwarri0r8.commumod.render;
+package io.cyb3rwarri0r8.commumod.entity.render;
 
-import io.cyb3rwarri0r8.commumod.help.Reference;
+import io.cyb3rwarri0r8.commumod.lib.Reference;
 import net.minecraft.client.model.ModelBiped;
 import net.minecraft.client.renderer.entity.RenderBiped;
 import net.minecraft.entity.Entity;

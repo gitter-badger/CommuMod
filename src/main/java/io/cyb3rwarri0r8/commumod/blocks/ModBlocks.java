@@ -2,7 +2,7 @@ package io.cyb3rwarri0r8.commumod.blocks;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import io.cyb3rwarri0r8.commumod.fluids.ModFluids;
-import io.cyb3rwarri0r8.commumod.help.RegisterHelper;
+import io.cyb3rwarri0r8.commumod.lib.RegisterHelper;
 import io.cyb3rwarri0r8.commumod.items.ModItems;
 import io.cyb3rwarri0r8.commumod.main;
 import net.minecraft.block.Block;
