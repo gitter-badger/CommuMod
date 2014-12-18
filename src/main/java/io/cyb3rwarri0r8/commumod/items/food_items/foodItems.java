@@ -14,6 +14,7 @@ import net.minecraft.item.ItemStack;
 public class foodItems {
 
     public static Item superCarrot = new FoodSuperCarrot(5, 5, false);
+    public static Item ticTac = new FoodTicTac(3,3,false);
 
 
 
@@ -25,6 +26,14 @@ public class foodItems {
                 "XYX",
                 "XXX",
                 'X', Blocks.gold_block, 'Y', Items.apple,
+        });
+
+        RegisterHelper.registerItem(ticTac);
+        GameRegistry.addRecipe(new ItemStack(ticTac), new Object[]{
+                "   ",
+                " Y ",
+                " X ",
+                'y', Items.dye, 'x', Items.sugar
         });
     }
 }
